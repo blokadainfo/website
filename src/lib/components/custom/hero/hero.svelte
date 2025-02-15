@@ -30,7 +30,7 @@
 	});
 </script>
 
-<div class="hero relative min-h-screen">
+<div class="hero relative h-[90lvh]">
 	<div
 		class="absolute inset-0 bg-cover bg-center brightness-50 grayscale transition-opacity duration-1000"
 		style="background-image: url('{imageUrlA}'); opacity: {isImageVisibleA ? 1 : 0};"

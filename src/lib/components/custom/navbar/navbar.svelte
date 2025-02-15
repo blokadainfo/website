@@ -2,7 +2,7 @@
 	import Logo from '$lib/assets/logo/logo-full.svg';
 </script>
 
-<div class="navbar bg-base-300">
+<div class="navbar h-[10lvh] bg-base-300">
 	<div class="flex flex-1 gap-2 px-2 lg:flex-none">
 		<!-- Bolje koristiti logo-mini (Mogućnost da sajt bude i na ćirilici i na latinici) -->
 		<a href="/">
