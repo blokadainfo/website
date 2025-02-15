@@ -39,25 +39,25 @@
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.days};"></span>
 			</span>
-			дана
+			dana
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.hours};"></span>
 			</span>
-			сати
+			sati
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.minutes};"></span>
 			</span>
-			минута
+			minuta
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
-			секунди
+			sekundi
 		</div>
 	</div>
 {:else if remainingTime.hours > 0}
@@ -66,19 +66,19 @@
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.hours};"></span>
 			</span>
-			сати
+			sati
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.minutes};"></span>
 			</span>
-			минута
+			minuta
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
-			секунди
+			sekundi
 		</div>
 	</div>
 {:else if remainingTime.minutes > 0}
@@ -87,13 +87,13 @@
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.minutes};"></span>
 			</span>
-			минута
+			minuta
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
-			секунди
+			sekundi
 		</div>
 	</div>
 {:else}
@@ -102,7 +102,7 @@
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
-			секунди
+			sekundi
 		</div>
 	</div>
 {/if}
