@@ -30,15 +30,19 @@
 	});
 </script>
 
-<div class="hero relative min-h-screen">
-	<div
-		class="absolute inset-0 bg-cover bg-center brightness-50 grayscale transition-opacity duration-1000"
-		style="background-image: url('{imageUrlA}'); opacity: {isImageVisibleA ? 1 : 0};"
-	></div>
-	<div
-		class="absolute inset-0 bg-cover bg-center brightness-50 grayscale transition-opacity duration-1000"
-		style="background-image: url('{imageUrlB}'); opacity: {!isImageVisibleA ? 1 : 0};"
-	></div>
+<div class="hero">
+	<img
+		src={imageUrlA}
+		alt="A"
+		class="brightness-50 grayscale transition-opacity duration-1000"
+		class:opacity-0={!isImageVisibleA}
+	/>
+	<img
+		src={imageUrlB}
+		alt="B"
+		class="brightness-50 grayscale transition-opacity duration-1000"
+		class:opacity-0={isImageVisibleA}
+	/>
 	<div class="hero-overlay bg-opacity-60"></div>
 	<div class="hero-content text-center text-neutral-content">
 		<div class="max-w-lg sm:max-w-2xl">
