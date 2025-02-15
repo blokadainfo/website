@@ -1,5 +1,7 @@
 <div class="my-8">
-	<h1 class="text-center text-5xl font-black">1.2. NA TRI MOSTA</h1>
+	<h1 class="xs:text-2xl text-center text-3xl font-black sm:text-4xl md:text-5xl">
+		1.2. NA TRI MOSTA
+	</h1>
 	<div class="my-8 flex place-content-center">
 		<div class="space-y-5 sm:flex sm:space-x-3 sm:space-y-0">
 			<!-- https://youtu.be/5mMA1p5NGPo -->
