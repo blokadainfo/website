@@ -98,9 +98,8 @@
 	</div>
 {:else if remainingTime.seconds <= 0}
 	<iframe
-		width="560"
-		height="315"
-		src="https://www.youtube.com/embed/OkW-JoOrTRw?si=tDH6G6cjp7R86BcC"
+		class="h-48 w-full sm:h-80"
+		src="https://www.youtube.com/embed/OkW-JoOrTRw"
 		title="YouTube video player"
 		frameborder="0"
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

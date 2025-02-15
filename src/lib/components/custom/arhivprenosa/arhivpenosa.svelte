@@ -1,21 +1,10 @@
-<script lang="ts">
-	let {
-		width = 448,
-		height = 252
-	}: {
-		width?: number;
-		height?: number;
-	} = $props();
-</script>
-
 <div class="my-8">
 	<h1 class="text-center text-5xl font-black">1.2. NA TRI MOSTA</h1>
 	<div class="my-8 flex place-content-center">
 		<div class="space-y-5 sm:flex sm:space-x-3 sm:space-y-0">
 			<!-- https://youtu.be/5mMA1p5NGPo -->
 			<iframe
-				{width}
-				{height}
+				class="h-48 w-full sm:w-1/3"
 				src="https://www.youtube.com/embed/5mMA1p5NGPo"
 				title="1.2. NA TRI MOSTA - 1. DEO"
 				frameborder="0"
@@ -25,8 +14,7 @@
 			></iframe>
 			<!-- https://youtu.be/Xos3UGapj6c -->
 			<iframe
-				{width}
-				{height}
+				class="h-48 w-full sm:w-1/3"
 				src="https://www.youtube.com/embed/Xos3UGapj6c"
 				title="1.2. NA TRI MOSTA - 2. DEO"
 				frameborder="0"
@@ -36,8 +24,7 @@
 			></iframe>
 			<!-- https://youtu.be/AsY7LL_5yxE -->
 			<iframe
-				{width}
-				{height}
+				class="h-48 w-full sm:w-1/3"
 				src="https://www.youtube.com/embed/AsY7LL_5yxE"
 				title="1.2. NA TRI MOSTA - 2. DEO"
 				frameborder="0"

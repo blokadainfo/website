@@ -125,17 +125,19 @@
 	];
 </script>
 
-<div class="m-1 mt-3 text-justify sm:m-20">
-	<h1 class="text-5xl">Poziv za protest u Kragujevcu</h1>
+<div class="m-1 mt-3 sm:m-20">
+	<h1 class="xs:text-2xl text-center text-3xl sm:text-4xl md:text-5xl">
+		Poziv za protest u Kragujevcu
+	</h1>
 	<br />
-	<p class="text-xl">
+	<p class="text-justify text-lg sm:text-xl">
 		U subotu, 15. februara s početkom u 9 časova, studenti i građani okupiće se duž Lepeničkog
 		bulevara u Kragujevcu, kako bi 15-časovnom blokadom obeležili Dan državnosti Republike Srbije.
 		Dan kada je donošenjem Sretenjskog ustava pokazano da dugogodišnja borba naroda za ustavnost i
 		modernizaciju države nije bila uzaludna.
 	</p>
 	<br />
-	<p class="text-xl">
+	<p class="text-justify text-lg sm:text-xl">
 		Ovog datuma, pre tačno 190 godina, donet je Ustav Knjaževstva Serbije, odnosno, Sretenjski
 		ustav. Ovaj ustav predstavlja prvi srpski i jedan od prvih demokratskih ustava u Evropi. Ušao je
 		u ustavnu istoriju Srbije kao značajan ustavni nacrt, iako nije doživeo praktičnu primenu. Njime
@@ -145,14 +147,14 @@
 		potvrđen od strane kneza Miloša Obrenovića.
 	</p>
 	<br />
-	<p class="text-xl">
+	<p class="text-justify text-lg sm:text-xl">
 		Na unutrašnjem planu, Sretenjski ustav je demokratski i antiautokratski. U Kragujevcu, februara
 		1835. godine, Srbija je dobila ustav u pravom demokratskom značenju tog pojma – ustav koji ne
 		učvršćuje autokratsku vlast knjaza, već ograničava i obuzdava vlast jednog čoveka. On je potekao
 		iz dugogodišnjih demokratskih težnji naroda.
 	</p>
 	<br />
-	<p class="text-xl">
+	<p class="text-justify text-lg sm:text-xl">
 		U jeku višemesečne građanske i studentske borbe za pravdu i poštovanje ustavnosti, važno je
 		prisetiti se trenutka u istoriji naše zemlje kada se borba naroda pokazala delotvornom. U tom
 		maniru, pozivamo građane da se u subotu, 15. februara, pridruže studentima u nekadašnjoj
@@ -160,8 +162,11 @@
 		da istrajemo u borbi za pravdu.
 	</p>
 	<br />
-	<p class="text-xl">Sretnimo se na Sretenje!</p>
+	<p class="text-justify text-lg sm:text-xl">Sretnimo se na Sretenje!</p>
 </div>
+
+<br />
+
 <div class="mt-5">
 	<div class="text-center sm:mx-20 sm:text-left">
 		<h1 class="text-5xl">Mapa Blokade</h1>
