@@ -11,9 +11,9 @@
 	</div>
 	<div class="flex flex-1 justify-end px-2">
 		<div class="hidden items-stretch sm:flex">
-			<a href="/about" class="btn btn-ghost rounded-btn">O nama</a>
-			<a href="#contact" class="btn btn-ghost rounded-btn">Kontakt</a>
-			<!-- <a href="/archive" class="btn btn-ghost rounded-btn">Arhiv blokade</a> -->
+			<a href="/kontakt" class="btn btn-ghost rounded-btn">Kontakt</a>
+			<a href="/arhivprenosa" class="btn btn-ghost rounded-btn">Arhiv prenosa</a>
+			<!-- <a href="/arhivblokade" class="btn btn-ghost rounded-btn">Arhiv blokade</a> -->
 		</div>
 		<div class="dropdown dropdown-end sm:hidden">
 			<div tabindex="0" role="button" class="btn btn-ghost rounded-btn">
@@ -32,9 +32,9 @@
 				>
 			</div>
 			<ul class="menu dropdown-content z-[1] mt-4 w-48 rounded-box bg-base-100 p-2 shadow">
-				<li><a href="/about">O nama</a></li>
-				<li><a href="#contact">Kontakt</a></li>
-				<!-- <li><a href="/archive">Arhiv blokade</a></li> -->
+				<li><a href="/kontakt">Kontakt</a></li>
+				<li><a href="/arhivprenosa">Arhiv prenosa</a></li>
+				<!-- <li><a href="/arhivblokade">Arhiv blokade</a></li> -->
 			</ul>
 		</div>
 	</div>
