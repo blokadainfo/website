@@ -10,7 +10,7 @@
 	} = $props();
 </script>
 
-<ul class="timeline timeline-vertical">
+<ul class="timeline timeline-vertical lg:timeline-horizontal">
 	{#each timetable as { name, start, end }, index}
 		{@const first = index === 0}
 		{@const last = index === timetable.length - 1}
@@ -24,7 +24,7 @@
 		{@const finished = new Date(Date.now()) >= (end ?? start)}
 		<li>
 			<hr class:hidden={first} class:bg-primary={finished} />
-			<div class="timeline-start timeline-box">{hhmm}</div>
+			<div class="timeline-start">{hhmm}</div>
 			<div class="timeline-middle">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

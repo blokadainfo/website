@@ -1,6 +1,6 @@
 <script lang="ts">
 	import MapaBlokada from '$lib/assets/event/kragujevac 15.2./mapa-blokada-kg.png';
-	import Timeline from '$lib/components/custom/timeline/timeline.svelte';
+	import Timeline from '$lib/components/custom/kragujevac/timeline.svelte';
 
 	const events = [
 		{
@@ -125,7 +125,7 @@
 	];
 </script>
 
-<div class="m-1 mt-3 sm:m-20">
+<div class="m-1 mt-3 sm:m-20 text-justify">
 	<h1 class="text-5xl">Poziv za protest u Kragujevcu</h1>
 	<br />
 	<p class="text-xl">
@@ -163,7 +163,7 @@
 	<p class="text-xl">Sretnimo se na Sretenje!</p>
 </div>
 <div class="mt-5">
-	<div class="sm:mx-20">
+	<div class="sm:mx-20 text-center sm:text-left">
 		<h1 class="text-5xl">Mapa Blokade</h1>
 		<p class="mt-3 italic sm:hidden">(Mapu je moguće skrolovati levo-desno.)</p>
 	</div>
@@ -175,13 +175,17 @@
 	</div>
 </div>
 
-<div>
+<div class="mb-12 flex flex-wrap justify-center">
 	<div>
-		<h1 class="my-8 text-center text-3xl font-bold">Protestni plan i program u Kragujevcu</h1>
-		<Timeline timetable={events} />
+		<h1 class="mt-8 text-center text-3xl font-bold">Protestni plan i program u Kragujevcu</h1>
+		<div class="py-2 overflow-scroll">
+			<Timeline timetable={events} />
+		</div>
 	</div>
 	<div>
-		<h1 class="my-8 text-center text-3xl font-bold">Satnica protesta u Kragujevcu</h1>
-		<Timeline {timetable} />
+		<h1 class="mt-8 text-center text-3xl font-bold">Satnica protesta u Kragujevcu</h1>
+		<div class="py-2 overflow-scroll">
+			<Timeline {timetable} />
+		</div>
 	</div>
 </div>
