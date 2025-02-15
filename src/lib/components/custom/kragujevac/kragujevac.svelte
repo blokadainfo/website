@@ -125,7 +125,7 @@
 	];
 </script>
 
-<div class="m-1 mt-3 sm:m-20 text-justify">
+<div class="m-1 mt-3 text-justify sm:m-20">
 	<h1 class="text-5xl">Poziv za protest u Kragujevcu</h1>
 	<br />
 	<p class="text-xl">
@@ -163,7 +163,7 @@
 	<p class="text-xl">Sretnimo se na Sretenje!</p>
 </div>
 <div class="mt-5">
-	<div class="sm:mx-20 text-center sm:text-left">
+	<div class="text-center sm:mx-20 sm:text-left">
 		<h1 class="text-5xl">Mapa Blokade</h1>
 		<p class="mt-3 italic sm:hidden">(Mapu je moguće skrolovati levo-desno.)</p>
 	</div>
@@ -178,13 +178,13 @@
 <div class="mb-12 flex flex-wrap justify-center">
 	<div>
 		<h1 class="mt-8 text-center text-3xl font-bold">Protestni plan i program u Kragujevcu</h1>
-		<div class="py-2 overflow-scroll">
+		<div class="overflow-scroll py-2">
 			<Timeline timetable={events} />
 		</div>
 	</div>
 	<div>
 		<h1 class="mt-8 text-center text-3xl font-bold">Satnica protesta u Kragujevcu</h1>
-		<div class="py-2 overflow-scroll">
+		<div class="overflow-scroll py-2">
 			<Timeline {timetable} />
 		</div>
 	</div>
