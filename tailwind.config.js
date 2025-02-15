@@ -4,7 +4,22 @@ import daisyui from 'daisyui';
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {
+			animation: {
+				fadeIn: 'fadeIn 1s ease-in-out forwards',
+				fadeOut: 'fadeOut 1s ease-in-out forwards',
+			},
+			keyframes: {
+				fadeIn: {
+				'0%': { opacity: '0' },
+				'100%': { opacity: '1' },
+				},
+				fadeOut: {
+				'0%': { opacity: '1' },
+				'100%': { opacity: '0' },
+				},
+			},
+		},
 	},
 	plugins: [daisyui]
 };
