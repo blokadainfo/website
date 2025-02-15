@@ -2,9 +2,9 @@
 	import Logo from '$lib/assets/logo/logo-full.svg';
 </script>
 
-<div class="navbar absolute bg-base-300 z-10">
+<div class="navbar absolute z-10 bg-base-300">
 	<div class="flex flex-1 gap-2 px-2 lg:flex-none">
-        <!-- Bolje koristiti logo-mini (Mogućnost da sajt bude i na ćirilici i na latinici) -->
+		<!-- Bolje koristiti logo-mini (Mogućnost da sajt bude i na ćirilici i na latinici) -->
 		<img src={Logo} alt="Blokada INFO Logo" class="h-14" />
 	</div>
 	<div class="flex flex-1 justify-end px-2">

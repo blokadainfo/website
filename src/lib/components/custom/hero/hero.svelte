@@ -32,11 +32,11 @@
 
 <div class="hero relative min-h-screen">
 	<div
-		class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 grayscale brightness-50"
+		class="absolute inset-0 bg-cover bg-center brightness-50 grayscale transition-opacity duration-1000"
 		style="background-image: url('{imageUrlA}'); opacity: {isImageVisibleA ? 1 : 0};"
 	></div>
 	<div
-		class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 grayscale brightness-50"
+		class="absolute inset-0 bg-cover bg-center brightness-50 grayscale transition-opacity duration-1000"
 		style="background-image: url('{imageUrlB}'); opacity: {!isImageVisibleA ? 1 : 0};"
 	></div>
 	<div class="hero-overlay bg-opacity-60"></div>
