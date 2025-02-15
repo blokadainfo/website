@@ -34,75 +34,75 @@
 </script>
 
 {#if remainingTime.days > 0}
-	<div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+	<div class="grid auto-cols-max grid-flow-col gap-2 text-center sm:gap-5">
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.days};"></span>
 			</span>
-			days
+			дана
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.hours};"></span>
 			</span>
-			hours
+			сати
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.minutes};"></span>
 			</span>
-			min
+			минута
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
-			sec
+			секунди
 		</div>
 	</div>
 {:else if remainingTime.hours > 0}
-	<div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+	<div class="grid auto-cols-max grid-flow-col gap-2 text-center sm:gap-5">
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.hours};"></span>
 			</span>
-			hours
+			сати
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.minutes};"></span>
 			</span>
-			min
+			минута
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
-			sec
+			секунди
 		</div>
 	</div>
 {:else if remainingTime.minutes > 0}
-	<div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+	<div class="grid auto-cols-max grid-flow-col gap-2 text-center sm:gap-5">
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.minutes};"></span>
 			</span>
-			min
+			минута
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
-			sec
+			секунди
 		</div>
 	</div>
 {:else}
-	<div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+	<div class="grid auto-cols-max grid-flow-col gap-2 text-center sm:gap-5">
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
 			<span class="countdown font-mono text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
-			sec
+			секунди
 		</div>
 	</div>
 {/if}
