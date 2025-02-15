@@ -43,7 +43,7 @@
 	<div class="hero-content text-center text-neutral-content">
 		<div class="max-w-lg sm:max-w-2xl">
 			<h1 class="mb-5 text-5xl font-bold">BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE</h1>
-			<div class="flex w-full justify-center"><Timer targetDate={'2025-02-15T09:00:00Z'} /></div>
+			<div class="flex w-full justify-center"><Timer targetDate={'2025-02-15T08:00:00Z'} /></div>
 		</div>
 	</div>
 </div>
