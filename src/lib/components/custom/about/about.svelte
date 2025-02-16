@@ -1,14 +1,6 @@
-<script lang="ts">
-	let {
-		id
-	}: {
-		id?: string;
-	} = $props();
-</script>
-
-<div {id}>
-	<h1 class="my-8 text-center text-2xl font-bold">Ko smo mi?</h1>
-	<div class="mx-auto my-5 max-w-screen-sm space-y-5 text-justify text-lg">
+<div class="mx-2">
+	<h1 class="my-4 text-center text-2xl font-bold sm:my-8 sm:text-3xl">Ko smo mi?</h1>
+	<div class="my-3 space-y-3 text-justify text-lg sm:mx-4 sm:my-5 sm:space-y-5">
 		<p>
 			Mi smo studenti u blokadi Univerziteta u Novom Sadu koji su se okupili i stvorili Blokada
 			INFO. Naš tim se u potpunosti sastoji od studenata - bilo da ih vidite na ekranu, da se nalaze

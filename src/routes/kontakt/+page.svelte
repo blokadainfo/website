@@ -3,7 +3,7 @@
 	import Contact from '$lib/components/custom/contact/contact.svelte';
 </script>
 
-<div class="flex w-full flex-col">
+<div class="mx-auto flex w-full max-w-screen-sm flex-col">
 	<About />
 	<Contact />
 </div>
