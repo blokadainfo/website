@@ -6,7 +6,7 @@
 		return () => clearInterval(interval);
 	});
 
-	const imageModules: Record<string, any> = import.meta.glob(
+	const imageModules = import.meta.glob(
 		'$lib/assets/backgrounds/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
 		{
 			eager: true, // TODO?
@@ -25,12 +25,8 @@
 	let imageIndexB = $state(imagesNum === 1 ? 0 : 1);
 	let isImageAVisible = $state(true);
 
-	const imageA = $derived(
-		Object.keys(imageModules).find((_value, index, _obj) => index === imageIndexA)
-	);
-	const imageB = $derived(
-		Object.keys(imageModules).find((_value, index, _obj) => index === imageIndexB)
-	);
+	const imageA = $derived(Object.keys(imageModules).find((_value, index) => index === imageIndexA));
+	const imageB = $derived(Object.keys(imageModules).find((_value, index) => index === imageIndexB));
 
 	function getRandomImageIndex(): number {
 		if (imagesNum < 3) {
