@@ -1,39 +1,37 @@
-<div class="my-8">
-	<h1 class="xs:text-2xl text-center text-3xl font-black sm:text-4xl md:text-5xl">
-		1.2. NA TRI MOSTA
-	</h1>
-	<div class="my-8 flex place-content-center">
-		<div class="space-y-5 sm:flex sm:space-x-3 sm:space-y-0">
-			<!-- https://youtu.be/5mMA1p5NGPo -->
-			<iframe
-				class="h-48 w-full sm:w-1/3"
-				src="https://www.youtube.com/embed/5mMA1p5NGPo"
-				title="1.2. NA TRI MOSTA - 1. DEO"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen
-				loading="lazy"
-			></iframe>
-			<!-- https://youtu.be/Xos3UGapj6c -->
-			<iframe
-				class="h-48 w-full sm:w-1/3"
-				src="https://www.youtube.com/embed/Xos3UGapj6c"
-				title="1.2. NA TRI MOSTA - 2. DEO"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen
-				loading="lazy"
-			></iframe>
-			<!-- https://youtu.be/AsY7LL_5yxE -->
-			<iframe
-				class="h-48 w-full sm:w-1/3"
-				src="https://www.youtube.com/embed/AsY7LL_5yxE"
-				title="1.2. NA TRI MOSTA - 2. DEO"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowfullscreen
-				loading="lazy"
-			></iframe>
-		</div>
-	</div>
+<script>
+	import Embeds from './embeds.svelte';
+</script>
+
+<div class="mx-auto my-8 max-w-screen-lg space-y-8">
+	<Embeds
+		title="SRETNIMO SE NA SRETENJE"
+		embeds={[
+			{
+				title: '1. DEO',
+				id: 'O1IX2HwM5vs'
+			},
+			{
+				title: '2. DEO',
+				id: 'Y127WDHaHg8'
+			}
+		]}
+	/>
+	<hr class="h-3" />
+	<Embeds
+		title="1.2. NA TRI MOSTA"
+		embeds={[
+			{
+				title: '1. DEO',
+				id: '5mMA1p5NGPo'
+			},
+			{
+				title: '2. DEO',
+				id: 'Xos3UGapj6c'
+			},
+			{
+				title: '3. DEO',
+				id: 'AsY7LL_5yxE'
+			}
+		]}
+	/>
 </div>
