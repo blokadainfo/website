@@ -1,11 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	onMount(() => {
-		const interval = setInterval(changeBackground, 3000);
-		return () => clearInterval(interval);
-	});
-
 	const imageModules: Record<string, { default: string }> = import.meta.glob(
 		'$lib/assets/backgrounds/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
 		{
@@ -15,63 +10,39 @@
 			}
 		}
 	);
+	const imageSources = Object.values(imageModules).map((m) => m.default);
+	const imageSourcesShuffled = imageSources
+		.map((value) => ({ value, sort: Math.random() }))
+		.sort((a, b) => a.sort - b.sort)
+		.map(({ value }) => value);
 
-	const imagesNum = Object.keys(imageModules).length;
-	if (imagesNum < 1) {
-		throw new Error('at least one image must exist');
-	}
-
-	let imageIndexA = $state(0);
-	let imageIndexB = $state(imagesNum === 1 ? 0 : 1);
-	let isImageAVisible = $state(true);
-
-	const { default: imageSrcA } = $derived(
-		Object.values(imageModules).find((_value, index) => index === imageIndexA)!
-	);
-	const { default: imageSrcB } = $derived(
-		Object.values(imageModules).find((_value, index) => index === imageIndexB)!
-	);
-
-	function getRandomImageIndex(): number {
-		if (imagesNum < 3) {
-			throw new Error('cannot get random image index when imagesNum is less than 3');
-		}
-
-		while (true) {
-			const randomIndex = Math.floor(Math.random() * imagesNum) + 1;
-			if (randomIndex !== imageIndexA && randomIndex !== imageIndexB) {
-				return randomIndex;
-			}
-		}
-	}
-
+	let currentBackgroundIndex = $state(0);
 	function changeBackground(): void {
-		if (imagesNum === 1) return;
-		if (imagesNum === 2) {
-			isImageAVisible = !isImageAVisible;
-			return;
-		}
-
-		if (isImageAVisible) {
-			imageIndexB = getRandomImageIndex();
+		if (currentBackgroundIndex + 1 < imageSources.length) {
+			currentBackgroundIndex++;
 		} else {
-			imageIndexA = getRandomImageIndex();
+			currentBackgroundIndex = 0;
 		}
-		isImageAVisible = !isImageAVisible;
 	}
+
+	onMount(() => {
+		const interval = setInterval(changeBackground, 3000);
+		return () => clearInterval(interval);
+	});
 </script>
 
-{#snippet background(src: string, visible: boolean, alt: string)}
+{#snippet background(src: string, idx: number)}
 	<enhanced:img
 		{src}
-		{alt}
+		alt={`Background ${idx}`}
 		class="absolute inset-0 size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
-		class:opacity-0={!visible}
+		class:opacity-0={idx !== currentBackgroundIndex}
 		loading="eager"
 	/>
 {/snippet}
 
 <div class="relative size-full">
-	{@render background(imageSrcA, isImageAVisible, 'Background A')}
-	{@render background(imageSrcB, !isImageAVisible, 'Background B')}
+	{#each imageSourcesShuffled as src, idx}
+		{@render background(src, idx)}
+	{/each}
 </div>
