@@ -13,7 +13,7 @@
 				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
 			</h1>
 			<div class="flex w-full justify-center">
-				<Timer targetDate={'2025-03-01T00:00:00Z'} />
+				<Timer targetDate={'2025-03-01T14:00:00Z'} />
 			</div>
 		</div>
 	</div>
