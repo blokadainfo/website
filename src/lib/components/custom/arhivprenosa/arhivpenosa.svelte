@@ -4,14 +4,14 @@
 
 <div class="mx-auto my-8 max-w-screen-lg space-y-8">
 	<Embeds
-		title="SRETNIMO SE NA SRETENJE"
+		title="15.2. SRETNIMO SE NA SRETENJE"
 		embeds={[
 			{
-				title: '1. DEO',
+				title: '15.2. SRETNIMO SE NA SRETENJE - 1. DEO',
 				id: 'O1IX2HwM5vs'
 			},
 			{
-				title: '2. DEO',
+				title: '15.2. SRETNIMO SE NA SRETENJE - 2. DEO',
 				id: 'Y127WDHaHg8'
 			}
 		]}
@@ -21,15 +21,15 @@
 		title="1.2. NA TRI MOSTA"
 		embeds={[
 			{
-				title: '1. DEO',
+				title: '1.2. NA TRI MOSTA - 1. DEO',
 				id: '5mMA1p5NGPo'
 			},
 			{
-				title: '2. DEO',
+				title: '1.2. NA TRI MOSTA - 2. DEO',
 				id: 'Xos3UGapj6c'
 			},
 			{
-				title: '3. DEO',
+				title: '1.2. NA TRI MOSTA - 3. DEO',
 				id: 'AsY7LL_5yxE'
 			}
 		]}
