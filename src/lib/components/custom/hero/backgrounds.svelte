@@ -6,10 +6,10 @@
 		return () => clearInterval(interval);
 	});
 
-	const imageModules = import.meta.glob(
+	const imageModules: Record<string, { default: string }> = import.meta.glob(
 		'$lib/assets/backgrounds/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
 		{
-			eager: true, // TODO?
+			eager: true,
 			query: {
 				enhanced: true
 			}
@@ -25,11 +25,11 @@
 	let imageIndexB = $state(imagesNum === 1 ? 0 : 1);
 	let isImageAVisible = $state(true);
 
-	const [_imagePathA, imageModuleA]: [string, any] = $derived(
-		Object.entries(imageModules).find((_value, index) => index === imageIndexA)!
+	const { default: imageSrcA } = $derived(
+		Object.values(imageModules).find((_value, index) => index === imageIndexA)!
 	);
-	const [_imagePathB, imageModuleB]: [string, any] = $derived(
-		Object.entries(imageModules).find((_value, index) => index === imageIndexB)!
+	const { default: imageSrcB } = $derived(
+		Object.values(imageModules).find((_value, index) => index === imageIndexB)!
 	);
 
 	function getRandomImageIndex(): number {
@@ -61,17 +61,17 @@
 	}
 </script>
 
-{#snippet background(src: string, visible: boolean)}
-	<div class="size-full object-cover">
-		<enhanced:img
-			{src}
-			alt="Background A"
-			class="size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
-			class:opacity-0={visible}
-			loading="eager"
-		/>
-	</div>
+{#snippet background(src: string, visible: boolean, alt: string)}
+	<enhanced:img
+		{src}
+		{alt}
+		class="absolute inset-0 size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
+		class:opacity-0={!visible}
+		loading="eager"
+	/>
 {/snippet}
 
-{@render background(imageModuleA.default, !isImageAVisible)}
-{@render background(imageModuleB.default, isImageAVisible)}
+<div class="relative size-full">
+	{@render background(imageSrcA, isImageAVisible, 'Background A')}
+	{@render background(imageSrcB, !isImageAVisible, 'Background B')}
+</div>

@@ -4,8 +4,9 @@
 </script>
 
 <div class="hero h-[90lvh]">
-	<Backgrounds />
-	<div class="hero-overlay bg-opacity-60"></div>
+	<div class="hero-overlay bg-opacity-60">
+		<Backgrounds />
+	</div>
 	<div class="hero-content text-center text-neutral-content">
 		<div class="max-w-lg sm:max-w-2xl">
 			<h1 class="xs:text-2xl mb-5 text-3xl font-bold sm:text-4xl md:text-5xl">
