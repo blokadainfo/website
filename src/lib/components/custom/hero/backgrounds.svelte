@@ -61,21 +61,17 @@
 	}
 </script>
 
-<div class="size-full object-cover">
-	<enhanced:img
-		src={imageModuleA.default}
-		alt="Background A"
-		class="size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
-		class:opacity-0={!isImageAVisible}
-		loading="eager"
-	/>
-</div>
-<div class="size-full object-cover">
-	<enhanced:img
-		src={imageModuleB.default}
-		alt="Background B"
-		class="size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
-		class:opacity-0={isImageAVisible}
-		loading="eager"
-	/>
-</div>
+{#snippet background(src: string, visible: boolean)}
+	<div class="size-full object-cover">
+		<enhanced:img
+			{src}
+			alt="Background A"
+			class="size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
+			class:opacity-0={visible}
+			loading="eager"
+		/>
+	</div>
+{/snippet}
+
+{@render background(imageModuleA.default, !isImageAVisible)}
+{@render background(imageModuleB.default, isImageAVisible)}
