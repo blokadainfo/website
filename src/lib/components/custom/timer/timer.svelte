@@ -33,28 +33,30 @@
 	});
 </script>
 
+<!--TODO: Snippets needed!!-->
+
 {#if remainingTime.days > 0}
 	<div class="grid auto-cols-max grid-flow-col gap-2 text-center sm:gap-5">
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
-			<span class="countdown font-mono text-7xl">
+			<span class="countdown font-mono text-5xl sm:text-7xl">
 				<span style="--value:{remainingTime.days};"></span>
 			</span>
 			dana
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
-			<span class="countdown font-mono text-7xl">
+			<span class="countdown font-mono text-5xl sm:text-7xl">
 				<span style="--value:{remainingTime.hours};"></span>
 			</span>
 			sati
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
-			<span class="countdown font-mono text-7xl">
+			<span class="countdown font-mono text-5xl sm:text-7xl">
 				<span style="--value:{remainingTime.minutes};"></span>
 			</span>
 			minuta
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
-			<span class="countdown font-mono text-7xl">
+			<span class="countdown font-mono text-5xl sm:text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
 			sekundi
@@ -63,19 +65,19 @@
 {:else if remainingTime.hours > 0}
 	<div class="grid auto-cols-max grid-flow-col gap-2 text-center sm:gap-5">
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
-			<span class="countdown font-mono text-7xl">
+			<span class="countdown font-mono text-5xl sm:text-7xl">
 				<span style="--value:{remainingTime.hours};"></span>
 			</span>
 			sati
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
-			<span class="countdown font-mono text-7xl">
+			<span class="countdown font-mono text-5xl sm:text-7xl">
 				<span style="--value:{remainingTime.minutes};"></span>
 			</span>
 			minuta
 		</div>
 		<div class="flex flex-col rounded-box bg-neutral p-2 text-neutral-content">
-			<span class="countdown font-mono text-7xl">
+			<span class="countdown font-mono text-5xl sm:text-7xl">
 				<span style="--value:{remainingTime.seconds};"></span>
 			</span>
 			sekundi
