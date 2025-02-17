@@ -25,8 +25,12 @@
 	let imageIndexB = $state(imagesNum === 1 ? 0 : 1);
 	let isImageAVisible = $state(true);
 
-	const imageA = $derived(Object.keys(imageModules).find((_value, index) => index === imageIndexA));
-	const imageB = $derived(Object.keys(imageModules).find((_value, index) => index === imageIndexB));
+	const [_imagePathA, imageModuleA]: [string, any] = $derived(
+		Object.entries(imageModules).find((_value, index) => index === imageIndexA)!
+	);
+	const [_imagePathB, imageModuleB]: [string, any] = $derived(
+		Object.entries(imageModules).find((_value, index) => index === imageIndexB)!
+	);
 
 	function getRandomImageIndex(): number {
 		if (imagesNum < 3) {
@@ -57,17 +61,21 @@
 	}
 </script>
 
-<img
-	src={imageA}
-	alt="Background A"
-	class="size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
-	class:opacity-0={!isImageAVisible}
-	loading="eager"
-/>
-<img
-	src={imageB}
-	alt="Background B"
-	class="size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
-	class:opacity-0={isImageAVisible}
-	loading="eager"
-/>
+<div class="size-full object-cover">
+	<enhanced:img
+		src={imageModuleA.default}
+		alt="Background A"
+		class="size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
+		class:opacity-0={!isImageAVisible}
+		loading="eager"
+	/>
+</div>
+<div class="size-full object-cover">
+	<enhanced:img
+		src={imageModuleB.default}
+		alt="Background B"
+		class="size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
+		class:opacity-0={isImageAVisible}
+		loading="eager"
+	/>
+</div>
