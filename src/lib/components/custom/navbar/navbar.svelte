@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logo from '$lib/assets/logo/logo-full.svg';
+	import Logo from '$lib/assets/logo/color/logo-full.svg';
 </script>
 
 <div class="navbar h-[10lvh] bg-base-300">
