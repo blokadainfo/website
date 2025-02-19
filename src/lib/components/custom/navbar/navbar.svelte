@@ -2,7 +2,7 @@
 	import Logo from '$lib/assets/logo/color/logo-full.svg';
 </script>
 
-<div class="navbar h-[10lvh] bg-base-300">
+<div class="navbar bg-base-300 h-[10lvh]">
 	<div class="flex flex-1 gap-2 px-2 lg:flex-none">
 		<!-- Bolje koristiti logo-mini (Mogućnost da sajt bude i na ćirilici i na latinici) -->
 		<a href="/">
@@ -31,7 +31,7 @@
 					></line><line x1="3" y1="18" x2="21" y2="18"></line></svg
 				>
 			</div>
-			<ul class="menu dropdown-content z-[1] mt-4 w-48 rounded-box bg-base-100 p-2 shadow">
+			<ul class="menu dropdown-content rounded-box bg-base-100 z-[1] mt-4 w-48 p-2 shadow">
 				<li><a href="/kontakt">Kontakt</a></li>
 				<li><a href="/arhivprenosa">Arhiv prenosa</a></li>
 				<!-- <li><a href="/arhivblokade">Arhiv blokade</a></li> -->
