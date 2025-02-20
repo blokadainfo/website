@@ -1,9 +1,7 @@
 <script lang="ts">
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount } from 'svelte';
 
 	let { video, targetDate } = $props();
-
-	let interval: number;
 
 	let remainingTime = $state(calculateTimeRemaining());
 
@@ -25,11 +23,8 @@
 	}
 
 	onMount(() => {
-		interval = setInterval(tick, 1000);
-	});
-
-	onDestroy(() => {
-		clearInterval(interval);
+		const interval = setInterval(tick, 1000);
+		return () => clearInterval(interval);
 	});
 
 	const timeUnits = $derived([
