@@ -18,25 +18,72 @@
 		return { years, months, days, hours, minutes, seconds };
 	}
 
-	function tick() {
-		remainingTime = calculateTimeRemaining();
+	function daysLabel(days: number): string {
+		switch (days) {
+			case 1:
+				return 'dan';
+			default:
+				return 'dana';
+		}
 	}
 
-	onMount(() => {
-		const interval = setInterval(tick, 1000);
-		return () => clearInterval(interval);
-	});
+	function hoursLabel(hours: number): string {
+		if (hours !== 11 && hours.toString().endsWith('1')) {
+			return 'sat';
+		}
+
+		if (
+			(hours !== 12 && hours.toString().endsWith('2')) ||
+			(hours !== 13 && hours.toString().endsWith('3')) ||
+			(hours !== 14 && hours.toString().endsWith('4'))
+		) {
+			return 'sata';
+		}
+
+		return 'sati';
+	}
+
+	function minutesLabel(minutes: number): string {
+		if (minutes !== 11 && minutes.toString().endsWith('1')) {
+			return 'minut';
+		}
+
+		return 'minuta';
+	}
+
+	function secondsLabel(seconds: number): string {
+		if (seconds !== 11 && seconds.toString().endsWith('1')) {
+			return 'sekunda';
+		}
+
+		if (
+			(seconds !== 12 && seconds.toString().endsWith('2')) ||
+			(seconds !== 13 && seconds.toString().endsWith('3')) ||
+			(seconds !== 14 && seconds.toString().endsWith('4'))
+		) {
+			return 'sekunde';
+		}
+
+		return 'sekundi';
+	}
 
 	const timeUnits = $derived([
-		{ value: remainingTime.days, label: 'dana' },
-		{ value: remainingTime.hours, label: 'sati' },
-		{ value: remainingTime.minutes, label: 'minuta' },
-		{ value: remainingTime.seconds, label: 'sekundi' }
+		{ value: remainingTime.days, label: daysLabel(remainingTime.days) },
+		{ value: remainingTime.hours, label: hoursLabel(remainingTime.hours) },
+		{ value: remainingTime.minutes, label: minutesLabel(remainingTime.minutes) },
+		{ value: remainingTime.seconds, label: secondsLabel(remainingTime.seconds) }
 	]);
 
 	const visibleTimeUnits = $derived(() => {
 		const firstNonZeroIndex = timeUnits.findIndex((unit) => unit.value > 0);
 		return firstNonZeroIndex === -1 ? [] : timeUnits.slice(firstNonZeroIndex);
+	});
+
+	onMount(() => {
+		const interval = setInterval(() => {
+			remainingTime = calculateTimeRemaining();
+		}, 1000);
+		return () => clearInterval(interval);
 	});
 </script>
 
