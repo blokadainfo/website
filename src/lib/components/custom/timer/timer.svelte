@@ -74,11 +74,6 @@
 		{ value: remainingTime.seconds, label: secondsLabel(remainingTime.seconds) }
 	]);
 
-	const visibleTimeUnits = $derived(() => {
-		const firstNonZeroIndex = timeUnits.findIndex((unit) => unit.value > 0);
-		return firstNonZeroIndex === -1 ? [] : timeUnits.slice(firstNonZeroIndex);
-	});
-
 	onMount(() => {
 		const interval = setInterval(() => {
 			remainingTime = calculateTimeRemaining();
