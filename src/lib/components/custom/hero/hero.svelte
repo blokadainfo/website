@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="absolute left-0 top-0 grid h-[100dvh] w-full place-items-center bg-black bg-cover bg-center"
+	class="relative left-0 top-0 grid h-[100dvh] w-full place-items-center bg-black bg-cover bg-center"
 >
 	<div class="col-start-1 row-start-1 h-full w-full">
 		<Backgrounds />
