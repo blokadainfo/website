@@ -38,11 +38,6 @@
 		{ value: remainingTime.minutes, label: 'minuta' },
 		{ value: remainingTime.seconds, label: 'sekundi' }
 	]);
-
-	const visibleTimeUnits = $derived(() => {
-		const firstNonZeroIndex = timeUnits.findIndex((unit) => unit.value > 0);
-		return firstNonZeroIndex === -1 ? [] : timeUnits.slice(firstNonZeroIndex);
-	});
 </script>
 
 {#snippet countdown(value: number, label: string)}
