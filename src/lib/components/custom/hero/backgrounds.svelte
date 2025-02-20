@@ -42,7 +42,7 @@
 	/>
 {/snippet}
 
-<div class="relative size-full">
+<div class="size-full">
 	{#each imageSourcesShuffled as src, idx}
 		{@render background(src, idx)}
 	{/each}
