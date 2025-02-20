@@ -1,41 +1,49 @@
 <script lang="ts">
-	import Logo from '$lib/assets/logo/color/logo-full.svg';
+	import LogoColored from '$lib/assets/logo/color/logo-full.svg';
+	import LogoWhite from '$lib/assets/logo/white/logo-full.svg';
+	import { fade } from 'svelte/transition';
+	import { page } from '$app/state';
+	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
+
+	let screenHeight: number = $state(0);
+	let y: number = $state(0);
+
+	onMount(() => {
+		if (browser) {
+			screenHeight = window.innerHeight;
+		}
+
+		const preloadImage = (src: string) => {
+			const img = new Image();
+			img.src = src;
+		};
+
+		preloadImage(LogoColored);
+		preloadImage(LogoWhite);
+	});
 </script>
 
-<div class="navbar bg-base-300 h-[10lvh]">
-	<div class="flex flex-1 gap-2 px-2 lg:flex-none">
-		<!-- Bolje koristiti logo-mini (Mogućnost da sajt bude i na ćirilici i na latinici) -->
-		<a href="/">
-			<img src={Logo} alt="Blokada INFO Logo" class="h-14" />
+<div class="sticky top-0 z-10 flex items-center">
+	<div class="flex flex-1 gap-2 lg:flex-none">
+		<a href="/" class="m-2 grid sm:m-4">
+			{#if y > screenHeight || page.route.id !== '/'}
+				<img
+					src={LogoColored}
+					alt="Blokada INFO Logo"
+					class="col-start-1 row-start-1 h-24"
+					transition:fade={{ duration: 250 }}
+				/>
+			{:else}
+				<img
+					src={LogoWhite}
+					alt="Blokada INFO Logo"
+					class="col-start-1 row-start-1 h-24"
+					transition:fade={{ duration: 250 }}
+				/>
+			{/if}
 		</a>
 	</div>
-	<div class="flex flex-1 justify-end px-2">
-		<div class="hidden items-stretch sm:flex">
-			<a href="/kontakt" class="btn btn-ghost rounded-btn">Kontakt</a>
-			<a href="/arhivprenosa" class="btn btn-ghost rounded-btn">Arhiv prenosa</a>
-			<!-- <a href="/arhivblokade" class="btn btn-ghost rounded-btn">Arhiv blokade</a> -->
-		</div>
-		<div class="dropdown dropdown-end sm:hidden">
-			<div tabindex="0" role="button" class="btn btn-ghost rounded-btn">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"
-					></line><line x1="3" y1="18" x2="21" y2="18"></line></svg
-				>
-			</div>
-			<ul class="menu dropdown-content rounded-box bg-base-100 z-[1] mt-4 w-48 p-2 shadow">
-				<li><a href="/kontakt">Kontakt</a></li>
-				<li><a href="/arhivprenosa">Arhiv prenosa</a></li>
-				<!-- <li><a href="/arhivblokade">Arhiv blokade</a></li> -->
-			</ul>
-		</div>
-	</div>
 </div>
+
+<svelte:window bind:scrollY={y} />
