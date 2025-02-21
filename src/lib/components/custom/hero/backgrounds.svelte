@@ -38,11 +38,11 @@
 		class="absolute inset-0 size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
 		class:opacity-0={idx !== currentBackgroundIndex}
 		loading="eager"
-		sizes="min(1280px, 100vw)"
+		sizes="min(1280px, 100%)"
 	/>
 {/snippet}
 
-<div class="relative size-full">
+<div class="size-full">
 	{#each imageSourcesShuffled as src, idx}
 		{@render background(src, idx)}
 	{/each}
