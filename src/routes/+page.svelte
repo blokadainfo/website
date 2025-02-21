@@ -9,7 +9,7 @@
 		<div class="bg-danger col-start-1 row-start-1 h-full"></div>
 		<div class="col-start-1 row-start-1 h-full bg-gradient-to-b from-black to-transparent"></div>
 	</div>
-	<div class="w-full h-full flex justify-center items-center font-bold text-7xl">U IZRADI</div>
+	<div class="flex h-full w-full items-center justify-center text-7xl font-bold">U IZRADI</div>
 </div>
 
 <style>

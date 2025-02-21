@@ -22,48 +22,46 @@
 	<Logo class="col-start-1 row-start-1 h-24" mini={screenWidth < 40 * 16} {primary} {secondary} />
 {/snippet}
 
-<div class="fixed top-0 z-10 flex w-full items-center">
-	<div class="flex flex-1 gap-2 lg:flex-none">
-		<a href="/" class="m-2 grid sm:m-4">
-			{#if page.route.id === '/'}
-				{#if y >= screenHeight - 48 || page.route.id !== '/'}
-					{@render logo('#db2340', '#50c2be')}
+{#if screenWidth !== 420420}
+	<div class="fixed top-0 z-10 flex w-full items-center">
+		<div class="flex flex-1 animate-fadeIn gap-2 lg:flex-none">
+			<a href="/" class="m-2 grid sm:m-4">
+				{#if page.route.id === '/'}
+					{#if y >= screenHeight - 48 || page.route.id !== '/'}
+						{@render logo('#db2340', '#50c2be')}
+					{:else}
+						{@render logo('#fff', '#fff')}
+					{/if}
 				{:else}
-					{@render logo('#fff', '#fff')}
+					{@render logo(initLogoConfig.primary, initLogoConfig.secondary)}
 				{/if}
-			{:else}
-				{@render logo(initLogoConfig.primary, initLogoConfig.secondary)}
-			{/if}
-		</a>
+			</a>
+		</div>
 	</div>
-</div>
+{/if}
 
 {#if page.route.id === '/'}
-	<div class="fixed top-0 z-10 hidden h-svh flex-col justify-center sm:flex">
-		<div
-			class="m-6 flex flex-col gap-2 text-xl font-bold {y < screenHeight / 2 + 80 - 50
-				? 'text-white'
-				: 'text-black'}"
-		>
+	<div class="fixed top-0 z-10 hidden h-svh animate-fadeIn flex-col justify-center sm:flex">
+		<div class="m-6 flex flex-col gap-2 text-xl font-bold">
 			<span
 				><a
 					href="/o_nama"
-					class="{y < screenHeight / 2 + 80 + 50
-						? 'hover:text-white/50'
-						: 'hover:text-black/50'} transition-colors duration-500">O NAMA</a
+					class="{y < screenHeight / 2 + 50 + 60
+						? 'text-white hover:text-white/50'
+						: 'text-black hover:text-black/50'} transition-colors duration-500">O NAMA</a
 				></span
 			>
 			<a
 				href="/arhiv_prenosa"
-				class="{y < screenHeight / 2 + 80 + 50
-					? 'hover:text-white/50'
-					: 'hover:text-black/50'} transition-colors duration-500">ARHIV PRENOSA</a
+				class="{y < screenHeight / 2 + 50 + 30
+					? 'text-white hover:text-white/50'
+					: 'text-black hover:text-black/50'} transition-colors duration-500">ARHIV PRENOSA</a
 			>
 			<a
 				href="/arhiv_protesta"
-				class="{y < screenHeight / 2 + 80 + 50
-					? 'hover:text-white/50'
-					: 'hover:text-black/50'} transition-colors duration-500">ARHIV PROTESTA</a
+				class="{y < screenHeight / 2 + 50 + 0
+					? 'text-white hover:text-white/50'
+					: 'text-black hover:text-black/50'} transition-colors duration-500">ARHIV PROTESTA</a
 			>
 		</div>
 	</div>
