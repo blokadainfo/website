@@ -1,4 +1,4 @@
-type TimeRemaining = {
+export type TimeRemaining = {
 	years: number;
 	months: number;
 	days: number;

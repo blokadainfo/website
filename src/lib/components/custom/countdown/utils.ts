@@ -1,3 +1,5 @@
+import type { TimeRemaining } from './types';
+
 export function calculateTimeRemaining(targetDate: Date): TimeRemaining {
 	const totalSeconds = Math.floor((targetDate.getTime() - Date.now()) / 1000);
 
