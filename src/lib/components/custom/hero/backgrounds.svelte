@@ -10,15 +10,15 @@
 			}
 		}
 	);
-	const imageSources = Object.values(imageModules).map((m) => m.default);
-	const imageSourcesShuffled = imageSources
+	const imageSourcesShuffled = Object.values(imageModules)
+		.map((m) => m.default)
 		.map((value) => ({ value, sort: Math.random() }))
 		.sort((a, b) => a.sort - b.sort)
 		.map(({ value }) => value);
 
 	let currentBackgroundIndex = $state(0);
 	function changeBackground(): void {
-		if (currentBackgroundIndex + 1 < imageSources.length) {
+		if (currentBackgroundIndex + 1 < imageSourcesShuffled.length) {
 			currentBackgroundIndex++;
 		} else {
 			currentBackgroundIndex = 0;
