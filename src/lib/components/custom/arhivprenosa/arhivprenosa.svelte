@@ -2,7 +2,7 @@
 	import Embeds from './embeds.svelte';
 </script>
 
-<div class="mx-auto my-8 max-w-screen-lg space-y-8">
+<div class="mx-0.5 mb-2 mt-28 max-w-screen-lg space-y-8 sm:mx-auto">
 	<Embeds
 		title="15.2. SRETNIMO SE NA SRETENJE"
 		embeds={[
