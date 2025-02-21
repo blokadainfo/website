@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Backgrounds from './backgrounds.svelte';
-	import Timer from '$lib/components/custom/timer/timer.svelte';
+	import Countdown from '$lib/components/custom/countdown/countdown.svelte';
+
+	const video = 'https://www.youtube.com/embed/pTtEqdvCk6w?si=j3u7P24SFOf05TgI';
+	const targetDate = new Date('2025-03-01T08:00:00Z'); // WARN: Use UTC time here
 </script>
 
 <div class="relative left-0 top-0 grid h-lvh w-full place-items-center bg-black bg-cover bg-center">
@@ -14,10 +17,7 @@
 				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
 			</h1>
 			<div class="flex w-full animate-fadeIn justify-center p-2">
-				<Timer
-					video="https://www.youtube.com/embed/pTtEqdvCk6w?si=j3u7P24SFOf05TgI"
-					targetDate={'2025-03-01T08:00:00Z'}
-				/>
+				<Countdown {video} {targetDate} />
 			</div>
 		</div>
 	</div>
