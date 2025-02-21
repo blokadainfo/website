@@ -16,7 +16,7 @@
 			<div class="flex w-full animate-fadeIn justify-center p-2">
 				<Timer
 					video="https://www.youtube.com/embed/pTtEqdvCk6w?si=j3u7P24SFOf05TgI"
-					targetDate={'2025-03-01T14:00:00Z'}
+					targetDate={'2025-03-01T08:00:00Z'}
 				/>
 			</div>
 		</div>
