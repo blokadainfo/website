@@ -12,20 +12,20 @@
 	<div class="m-6 flex flex-col gap-2 text-xl font-bold">
 		<span
 			><a
-				href="/o_nama"
+				href="/o-nama"
 				class="{page.route.id === '/' && y < screenHeight / 2 + 50 + 60
 					? 'text-white hover:text-white/50'
 					: 'text-black hover:text-black/50'} transition-colors duration-500">O NAMA</a
 			></span
 		>
 		<a
-			href="/arhiv_prenosa"
+			href="/arhiv-prenosa"
 			class="{page.route.id === '/' && y < screenHeight / 2 + 50 + 30
 				? 'text-white hover:text-white/50'
 				: 'text-black hover:text-black/50'} transition-colors duration-500">ARHIV PRENOSA</a
 		>
 		<!--<a
-				href="/arhiv_protesta"
+				href="/arhiv-protesta"
 				class="{page.route.id === '/' && y < screenHeight / 2 + 50 + 0
 					? 'text-white hover:text-white/50'
 					: 'text-black hover:text-black/50'} transition-colors duration-500">ARHIV PROTESTA</a

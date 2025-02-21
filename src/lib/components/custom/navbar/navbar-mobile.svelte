@@ -55,10 +55,10 @@
 	<div class="fixed inset-0 z-30 h-lvh bg-white">
 		<div class="flex h-full w-full flex-col items-center justify-center gap-4">
 			<a href="/" onclick={() => toggleMenu()}>POČETNA</a>
-			<a href="/o_nama" onclick={() => toggleMenu()}>O NAMA</a>
-			<a href="/arhiv_prenosa" onclick={() => toggleMenu()}>ARHIV PRENOSA</a>
+			<a href="/o-nama" onclick={() => toggleMenu()}>O NAMA</a>
+			<a href="/arhiv-prenosa" onclick={() => toggleMenu()}>ARHIV PRENOSA</a>
 			<!--<a
-				href="/arhiv_protesta" onclick={() => toggleMenu()}>ARHIV PROTESTA</a
+				href="/arhiv-protesta" onclick={() => toggleMenu()}>ARHIV PROTESTA</a
 			>-->
 		</div>
 	</div>
