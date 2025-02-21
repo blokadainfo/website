@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	let { video, targetDate } = $props();
-
 	let remainingTime = $state(calculateTimeRemaining());
 
 	function calculateTimeRemaining() {
@@ -18,61 +18,23 @@
 		return { years, months, days, hours, minutes, seconds };
 	}
 
-	function daysLabel(days: number): string {
-		switch (days) {
-			case 1:
-				return 'dan';
-			default:
-				return 'dana';
-		}
-	}
-
-	function hoursLabel(hours: number): string {
-		if (hours !== 11 && hours.toString().endsWith('1')) {
-			return 'sat';
-		}
-
-		if (
-			(hours !== 12 && hours.toString().endsWith('2')) ||
-			(hours !== 13 && hours.toString().endsWith('3')) ||
-			(hours !== 14 && hours.toString().endsWith('4'))
-		) {
-			return 'sata';
-		}
-
-		return 'sati';
-	}
-
-	function minutesLabel(minutes: number): string {
-		if (minutes !== 11 && minutes.toString().endsWith('1')) {
-			return 'minut';
-		}
-
-		return 'minuta';
-	}
-
-	function secondsLabel(seconds: number): string {
-		if (seconds !== 11 && seconds.toString().endsWith('1')) {
-			return 'sekunda';
-		}
-
-		if (
-			(seconds !== 12 && seconds.toString().endsWith('2')) ||
-			(seconds !== 13 && seconds.toString().endsWith('3')) ||
-			(seconds !== 14 && seconds.toString().endsWith('4'))
-		) {
-			return 'sekunde';
-		}
-
-		return 'sekundi';
-	}
-
 	const timeUnits = $derived([
-		{ value: remainingTime.days, label: daysLabel(remainingTime.days) },
-		{ value: remainingTime.hours, label: hoursLabel(remainingTime.hours) },
-		{ value: remainingTime.minutes, label: minutesLabel(remainingTime.minutes) },
-		{ value: remainingTime.seconds, label: secondsLabel(remainingTime.seconds) }
+		{ value: remainingTime.days, label: pluralize(remainingTime.days, ['dan', 'dana', 'dana']) },
+		{ value: remainingTime.hours, label: pluralize(remainingTime.hours, ['sat', 'sata', 'sati']) },
+		{
+			value: remainingTime.minutes,
+			label: pluralize(remainingTime.minutes, ['minut', 'minuta', 'minuta'])
+		},
+		{
+			value: remainingTime.seconds,
+			label: pluralize(remainingTime.seconds, ['sekunda', 'sekunde', 'sekundi'])
+		}
 	]);
+
+	function pluralize(n: number, forms: [string, string, string]) {
+		const cases = [2, 0, 1, 1, 1, 2];
+		return forms[n % 100 > 4 && n % 100 < 20 ? 2 : cases[Math.min(n % 10, 5)]];
+	}
 
 	onMount(() => {
 		const interval = setInterval(() => {
@@ -87,7 +49,16 @@
 		<span class="countdown text-5xl text-white sm:text-7xl">
 			<span style="--value:{value};"></span>
 		</span>
-		<span class="text-white">{label}</span>
+		<div class="relative h-6">
+			{#key label}
+				<span
+					transition:fade={{ duration: 250 }}
+					class="absolute inset-0 flex items-center justify-center text-center text-white"
+				>
+					{label}
+				</span>
+			{/key}
+		</div>
 	</div>
 {/snippet}
 
