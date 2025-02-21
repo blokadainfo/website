@@ -13,7 +13,7 @@
 	style:--primary={primary}
 	style:--secondary={secondary}
 	class={className}
-	transition:fade={{ duration: 500 }}
+	transition:fade={{ duration: 375 }}
 	version="1.1"
 	id="Layer_1"
 	x="0px"

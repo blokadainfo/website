@@ -38,4 +38,34 @@
 	</div>
 </div>
 
+{#if page.route.id === '/'}
+	<div class="fixed top-0 z-10 hidden h-svh flex-col justify-center sm:flex">
+		<div
+			class="m-6 flex flex-col gap-2 text-xl font-bold {y < screenHeight / 2 + 80 - 50
+				? 'text-white'
+				: 'text-black'}"
+		>
+			<span
+				><a
+					href="/o_nama"
+					class="{y < screenHeight / 2 + 80 + 50
+						? 'hover:text-white/50'
+						: 'hover:text-black/50'} transition-colors duration-500">O NAMA</a
+				></span
+			>
+			<a
+				href="/arhiv_prenosa"
+				class="{y < screenHeight / 2 + 80 + 50
+					? 'hover:text-white/50'
+					: 'hover:text-black/50'} transition-colors duration-500">ARHIV PRENOSA</a
+			>
+			<a
+				href="/arhiv_protesta"
+				class="{y < screenHeight / 2 + 80 + 50
+					? 'hover:text-white/50'
+					: 'hover:text-black/50'} transition-colors duration-500">ARHIV PROTESTA</a
+			>
+		</div>
+	</div>
+{/if}
 <svelte:window bind:scrollY={y} />
