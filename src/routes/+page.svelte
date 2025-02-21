@@ -4,6 +4,7 @@
 
 <Hero />
 
+<!--
 <div class="h-lvh">
 	<div class="grid h-20">
 		<div
@@ -14,6 +15,7 @@
 	<div class="flex h-full w-full flex-col items-center justify-center text-7xl font-bold">
 		<span>NIŠ SPEC</span>
 		<span>U IZRADI</span>
-		<div class="w-full sm:px-72"><!--Content--></div>
+		<div class="w-full sm:px-72"> "CONTENT PLACEHOLDER" </div>
 	</div>
 </div>
+-->
