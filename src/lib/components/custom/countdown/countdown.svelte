@@ -1,23 +1,17 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import { calculateTimeRemaining, pluralize } from './utils';
 
-	let { video, targetDate } = $props();
-	let remainingTime = $state(calculateTimeRemaining());
+	let {
+		video,
+		targetDate
+	}: {
+		video: string;
+		targetDate: Date;
+	} = $props();
 
-	function calculateTimeRemaining() {
-		const totalSeconds = Math.floor((new Date(targetDate).getTime() - Date.now()) / 1000);
-
-		const years = Math.floor(totalSeconds / (60 * 60 * 24 * 365));
-		const months = Math.floor((totalSeconds % (60 * 60 * 24 * 365)) / (60 * 60 * 24 * 30));
-		const days = Math.floor((totalSeconds % (60 * 60 * 24 * 30)) / (60 * 60 * 24));
-		const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
-		const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
-		const seconds = Math.floor(totalSeconds % 60);
-
-		return { years, months, days, hours, minutes, seconds };
-	}
-
+	let remainingTime = $state(calculateTimeRemaining(targetDate));
 	const timeUnits = $derived([
 		{ value: remainingTime.days, label: pluralize(remainingTime.days, ['dan', 'dana', 'dana']) },
 		{ value: remainingTime.hours, label: pluralize(remainingTime.hours, ['sat', 'sata', 'sati']) },
@@ -31,14 +25,9 @@
 		}
 	]);
 
-	function pluralize(n: number, forms: [string, string, string]) {
-		const cases = [2, 0, 1, 1, 1, 2];
-		return forms[n % 100 > 4 && n % 100 < 20 ? 2 : cases[Math.min(n % 10, 5)]];
-	}
-
 	onMount(() => {
 		const interval = setInterval(() => {
-			remainingTime = calculateTimeRemaining();
+			remainingTime = calculateTimeRemaining(targetDate);
 		}, 1000);
 		return () => clearInterval(interval);
 	});
