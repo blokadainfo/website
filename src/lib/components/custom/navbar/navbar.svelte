@@ -14,10 +14,10 @@
 	});
 </script>
 
-<div class="hidden sm:block">
+<div class="hidden xl:block">
 	<NavbarDesktop {y} {screenHeight} />
 </div>
-<div class="block sm:hidden">
+<div class="block xl:hidden">
 	<NavbarMobile {y} {screenHeight} />
 </div>
 <svelte:window bind:scrollY={y} />

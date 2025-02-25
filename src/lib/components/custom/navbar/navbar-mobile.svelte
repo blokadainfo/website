@@ -75,6 +75,7 @@
 			<a href="/" onclick={() => toggleMenu()}>POČETNA</a>
 			<a href="/o-nama" onclick={() => toggleMenu()}>O NAMA</a>
 			<a href="/arhiv-prenosa" onclick={() => toggleMenu()}>ARHIV PRENOSA</a>
+			<a href="/vaznost-sednice-strucnog-veca" onclick={() => toggleMenu()}>VAŽNOST SEDNICE</a>
 			<!--<a
 				href="/arhiv-protesta" onclick={() => toggleMenu()}>ARHIV PROTESTA</a
 			>-->
