@@ -45,15 +45,15 @@
 {#snippet menuButton(color: string)}
 	<button
 		type="button"
-		class="h-24 cursor-pointer {page.route.id === '/' ? 'animate-fadeIn' : ''}"
+		class="h-24 pr-2 cursor-pointer {page.route.id === '/' ? 'animate-fadeIn' : ''}"
 		onclick={toggleMenu}
 		aria-label="Otvori Meni"
 	>
 		<svg
 			transition:fade={{ duration: 375 }}
 			xmlns="http://www.w3.org/2000/svg"
-			width="80%"
-			height="80%"
+			width="62"
+			height="77"
 			viewBox="0 0 512 512"
 		>
 			<path
