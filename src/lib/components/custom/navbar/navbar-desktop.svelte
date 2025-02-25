@@ -1,11 +1,26 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/state';
+	import Logo from '../logo/logo.svelte';
 
-	let { y, screenWidth, screenHeight } = $props();
+	let { y, screenHeight } = $props();
 </script>
 
+{#snippet logo(primary: string, secondary: string)}
+	<Logo class="col-start-1 row-start-1 h-24" {primary} {secondary} />
+{/snippet}
+
+<div class="fixed top-0 z-30">
+	<a href="/" class="m-2 grid animate-fadeIn sm:m-4">
+		{#if y >= screenHeight - 48 || page.route.id !== '/'}
+			{@render logo('#db2340', '#50c2be')}
+		{:else}
+			{@render logo('#fff', '#fff')}
+		{/if}
+	</a>
+</div>
+
 <div
-	class="fixed top-0 z-10 hidden h-svh flex-col justify-center sm:flex {page.route.id === '/'
+	class="fixed top-0 z-10 flex h-svh flex-col justify-center {page.route.id === '/'
 		? 'animate-fadeIn'
 		: ''}"
 >

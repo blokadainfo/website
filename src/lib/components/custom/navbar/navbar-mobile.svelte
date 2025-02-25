@@ -1,13 +1,14 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { fade } from 'svelte/transition';
+	import Logo from '../logo/logo.svelte';
 
-	let { y, screenWidth, screenHeight } = $props();
+	let { y, screenHeight } = $props();
 	let showMenu = $state(false);
 
-	function getColor(color: string): string {
+	function getMenuIconColor(color: string): string {
 		if (showMenu === true) {
-			return '#000';
+			return '#db2340';
 		}
 
 		return color === 'auto'
@@ -17,17 +18,34 @@
 			: color;
 	}
 
+	function getLogoIconColor(color: string): string {
+		if (showMenu === true) {
+			return color;
+		}
+
+		return y >= screenHeight - 48 || page.route.id !== '/' ? color : '#fff';
+	}
+
 	function toggleMenu() {
 		showMenu = !showMenu;
 	}
 </script>
 
+{#snippet logo(primary?: string, secondary?: string)}
+	<a href="/" class="ml-2 h-24">
+		<Logo
+			class="h-24 {page.route.id === '/' ? 'animate-fadeIn' : ''}"
+			mini={true}
+			{primary}
+			{secondary}
+		/>
+	</a>
+{/snippet}
+
 {#snippet menuButton(color: string)}
 	<button
 		type="button"
-		class="fixed -right-1 top-0 z-50 mt-3 block h-24 cursor-pointer sm:hidden {page.route.id === '/'
-			? 'animate-fadeIn'
-			: ''}"
+		class="h-24 cursor-pointer {page.route.id === '/' ? 'animate-fadeIn' : ''}"
 		onclick={toggleMenu}
 		aria-label="Otvori Meni"
 	>
@@ -41,7 +59,7 @@
 			<path
 				class="transition-colors duration-500"
 				fill="none"
-				stroke={getColor(color)}
+				stroke={getMenuIconColor(color)}
 				stroke-linecap="round"
 				stroke-miterlimit="10"
 				stroke-width="64"
@@ -64,4 +82,11 @@
 	</div>
 {/if}
 
-{@render menuButton('auto')}
+<div
+	class="flex h-20 w-full justify-between {page.route.id === '/' || showMenu === true
+		? 'fixed top-0 z-50'
+		: ''}"
+>
+	{@render logo(getLogoIconColor('#db2340'), getLogoIconColor('#50c2be'))}
+	{@render menuButton('auto')}
+</div>
