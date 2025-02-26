@@ -10,6 +10,10 @@
 			text: 'O NAMA'
 		},
 		{
+			href: '/donacije',
+			text: 'DONACIJE'
+		},
+		{
 			href: '/arhiv-prenosa',
 			text: 'ARHIV PRENOSA'
 		},
