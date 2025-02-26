@@ -3,7 +3,18 @@
 	import { fade } from 'svelte/transition';
 	import Logo from '../logo/logo.svelte';
 
-	let { y, screenHeight } = $props();
+	let {
+		items,
+		y,
+		screenHeight
+	}: {
+		items: {
+			href: string;
+			text: string;
+		}[];
+		y: number;
+		screenHeight: number;
+	} = $props();
 	let showMenu = $state(false);
 
 	function getMenuIconColor(color: string): string {
@@ -45,7 +56,7 @@
 {#snippet menuButton(color: string)}
 	<button
 		type="button"
-		class="h-24 pr-2 cursor-pointer {page.route.id === '/' ? 'animate-fadeIn' : ''}"
+		class="h-24 cursor-pointer pr-2 {page.route.id === '/' ? 'animate-fadeIn' : ''}"
 		onclick={toggleMenu}
 		aria-label="Otvori Meni"
 	>
@@ -72,13 +83,9 @@
 {#if showMenu}
 	<div class="fixed inset-0 z-30 h-lvh bg-white">
 		<div class="flex h-full w-full flex-col items-center justify-center gap-4">
-			<a href="/" onclick={() => toggleMenu()}>POČETNA</a>
-			<a href="/o-nama" onclick={() => toggleMenu()}>O NAMA</a>
-			<a href="/arhiv-prenosa" onclick={() => toggleMenu()}>ARHIV PRENOSA</a>
-			<a href="/vaznost-sednice-strucnog-veca" onclick={() => toggleMenu()}>VAŽNOST SEDNICE</a>
-			<!--<a
-				href="/arhiv-protesta" onclick={() => toggleMenu()}>ARHIV PROTESTA</a
-			>-->
+			{#each items as { href, text } (href)}
+				<a {href} onclick={() => toggleMenu()}>{text}</a>
+			{/each}
 		</div>
 	</div>
 {/if}

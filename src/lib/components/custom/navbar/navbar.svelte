@@ -4,8 +4,23 @@
 	import NavbarDesktop from './navbar-desktop.svelte';
 	import NavbarMobile from './navbar-mobile.svelte';
 
+	const items = [
+		{
+			href: '/o-nama',
+			text: 'O NAMA'
+		},
+		{
+			href: '/arhiv-prenosa',
+			text: 'ARHIV PRENOSA'
+		},
+		{
+			href: '/vaznost-sednice-strucnog-veca',
+			text: 'VAŽNOST SEDNICE'
+		}
+	];
+
+	let y = $state(0);
 	let screenHeight: number = $state(420420);
-	let y: number = $state(0);
 
 	onMount(() => {
 		if (browser) {
@@ -15,9 +30,10 @@
 </script>
 
 <div class="hidden xl:block">
-	<NavbarDesktop {y} {screenHeight} />
+	<NavbarDesktop {items} {y} {screenHeight} />
 </div>
 <div class="block xl:hidden">
-	<NavbarMobile {y} {screenHeight} />
+	<NavbarMobile {items} {y} {screenHeight} />
 </div>
+
 <svelte:window bind:scrollY={y} />
