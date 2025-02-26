@@ -8,7 +8,7 @@
 	<p class="text-justify">
 		Na ovoj stranici se nalaze sve potrepštine našeg tima. Svi artikli koji imaju specificiran naziv
 		su tačno oni modeli koji su nam potrebni dok više generična imena ukazuju na to da nam model
-		nije bitan. Takođe su priloženi i linkovi ka sajtevima gde ih je moguće kupiti, doduše to je
+		nije bitan. Takođe su priloženi i linkovi ka stranicama gde ih je moguće kupiti, doduše to je
 		samo smernica, ako je moguće nabaviti za manju cenu ili čak uzeti polovno to je svakako bolja
 		opcija. Artikle linkovane ka sajtu <a href="https://ipon.hu" class="italic underline">ipon.hu</a
 		>
