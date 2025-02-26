@@ -83,6 +83,7 @@
 {#if showMenu}
 	<div class="fixed inset-0 z-30 h-lvh bg-white">
 		<div class="flex h-full w-full flex-col items-center justify-center gap-4">
+			<a href="/" onclick={() => toggleMenu()}>POČETNA</a>
 			{#each items as { href, text } (href)}
 				<a {href} onclick={() => toggleMenu()}>{text}</a>
 			{/each}
