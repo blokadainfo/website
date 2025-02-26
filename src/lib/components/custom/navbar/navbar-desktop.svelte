@@ -2,7 +2,18 @@
 	import { page } from '$app/state';
 	import Logo from '../logo/logo.svelte';
 
-	let { y, screenHeight } = $props();
+	let {
+		items,
+		y,
+		screenHeight
+	}: {
+		items: {
+			href: string;
+			text: string;
+		}[];
+		y: number;
+		screenHeight: number;
+	} = $props();
 </script>
 
 {#snippet logo(primary: string, secondary: string)}
@@ -25,29 +36,13 @@
 		: ''}"
 >
 	<div class="m-6 flex flex-col gap-2 text-xl font-bold">
-		<a
-			href="/o-nama"
-			class="{page.route.id === '/' && y < screenHeight / 2 + 50 + 60
-				? 'text-white hover:text-white/50'
-				: 'text-black hover:text-black/50'} transition-colors duration-500">O NAMA</a
-		>
-		<a
-			href="/arhiv-prenosa"
-			class="{page.route.id === '/' && y < screenHeight / 2 + 50 + 30
-				? 'text-white hover:text-white/50'
-				: 'text-black hover:text-black/50'} transition-colors duration-500">ARHIV PRENOSA</a
-		>
-		<a
-			href="/vaznost-sednice-strucnog-veca"
-			class="{page.route.id === '/' && y < screenHeight / 2 + 50 + 0
-				? 'text-white hover:text-white/50'
-				: 'text-black hover:text-black/50'} transition-colors duration-500">VAŽNOST SEDNICE</a
-		>
-		<!--<a
-				href="/arhiv-protesta"
-				class="{page.route.id === '/' && y < screenHeight / 2 + 50 + 0
+		{#each items as { href, text } (href)}
+			<a
+				{href}
+				class="{page.route.id === '/' && y < screenHeight / 2 + 50 + 60
 					? 'text-white hover:text-white/50'
-					: 'text-black hover:text-black/50'} transition-colors duration-500">ARHIV PROTESTA</a
-			>-->
+					: 'text-black hover:text-black/50'} transition-colors duration-500">{text}</a
+			>
+		{/each}
 	</div>
 </div>
