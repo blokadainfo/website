@@ -7,10 +7,57 @@ export const donations: {
 		name: 'Gift kartice za gorivo'
 	},
 	{
+		name: 'Kiloview P3 Mini link',
+		pieces: 1,
+		links: ['https://www.kiloview.com/en/p3-mini']
+	},
+	{
+		name: 'SONY PXW Z90 Camcorder',
+		pieces: 1,
+		links: ['https://pro.sony/en_BG/products/handheld-camcorders/pxw-z90']
+	},
+	{
+		name: 'Batt for SONY FV 100',
+		pieces: 3
+	},
+	{
+		name: 'SACHTLER ACE 1002 Tripod',
+		pieces: 1,
+		links: ['https://www.videoexpert.eu/en/up-to-4-kg/sachtler-ace-m-gs-tripod-system']
+	},
+	{
+		name: 'SACHTLER SC 003 Bag profesional',
+		pieces: 1,
+		links: ['https://www.videoexpert.eu/en/search/?search=SACHTLER+SC+003+Bag']
+	},
+	{
+		name: 'SENNHEISER MD46 Mic',
+		pieces: 1,
+		links: ['https://www.sennheiser.com/en-de/search-page?searchTerm=SENNHEISER%20MD46%20Mic']
+	},
+	{
+		name: 'SENNHEISER ENG set EW D ENG',
+		pieces: 1,
+		links: [
+			'https://www.sennheiser.com/en-de/catalog/products/wireless-systems/ew-dp-eng-set/ew-dp-eng-set-u15-700046'
+		]
+	},
+	{
+		name: 'SanDisk 128GB 200MB/s',
+		pieces: 6
+	},
+	{
 		name: 'Filter za kameru - KF Concept 82mm XV56 Nano-X Slim Variable NDX HD ND2-ND400',
 		pieces: 1,
 		links: [
 			'https://josipovic.rs/proizvod/kf-concept-82mm-xv56-nano-x-slim-variable-fader-ndx-hd-nd2-nd400-waterproof-anti-scratch-green-coated'
+		]
+	},
+	{
+		name: 'SENNHEISER HD25 Headphone',
+		pieces: 1,
+		links: [
+			'https://www.sennheiser.com/en-de/search-page?searchTerm=SENNHEISER+HD25+Headphone&searchCategory=Products'
 		]
 	},
 	{
