@@ -27,7 +27,7 @@
 					{#if donation.links && donation.links.length > 0}
 						<ul class="space-y-2">
 							{#each donation.links as link (link)}
-								<li>
+								<li class="break-all">
 									<a
 										href={link}
 										class="text-blue-500 hover:underline"
