@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class="mt-4 w-full max-w-screen-lg space-y-8 hyphens-auto sm:mt-0 lg:mx-auto lg:max-w-screen-md"
+	class="mt-4 w-full max-w-screen-lg space-y-8 hyphens-auto tracking-tighter sm:mt-0 lg:mx-auto lg:max-w-screen-md"
 >
 	<div class="grid w-full">
 		<img src={P0} alt="Slika 0" class="col-start-1 row-start-1 w-full object-cover" />
@@ -23,7 +23,7 @@
 		</h1>
 	</div>
 	<div class="p-2 text-justify">
-		<p class="text-xl">
+		<p class="text-base sm:text-xl">
 			Rektorat je mesto gde se okupljaju studenti svih blokiranih fakulteta u Novom Sadu. Stručno
 			veće za prirodno-matematičke nauke ovde je održalo sednicu 20. februara 2025. Sednica je
 			održana uživo kako bi profesori novosadskog Univerziteta pokazali da je to moguće.
@@ -39,8 +39,8 @@
 		</a>
 	</div>
 	<div class="px-2 text-justify">
-		<h2 class="text-left text-3xl">A kome je ta poruka upućena?</h2>
-		<p class="pt-2 text-xl">
+		<h2 class="text-left text-2xl sm:text-3xl">A kome je ta poruka upućena?</h2>
+		<p class="pt-2 text-base sm:text-xl">
 			Sednica Senata Univerziteta u Novom Sadu i dalje nije održana. Iako se u prošlosti bez
 			problema realizovala elektronski, ovog puta, zbog molbe Patrika Drida, dekana Fakulteta sporta
 			i fizičkog vaspitanja, ona mora da se održi uživo.
@@ -66,21 +66,21 @@
 	</div>
 
 	<div class="px-2 text-justify">
-		<p class="pt-2 text-xl">
+		<p class="pt-2 text-base sm:text-xl">
 			Rektor Dejan Madić odlaganjem ove sednice, direktno dovodi u pitanje egzistenciju određenih
 			profesora, ali i produbljuje postojeću krizu.
 		</p>
 	</div>
 	<div class="px-2 text-justify">
-		<h2 class="text-left text-3xl">Zašto je sednica Senata važna?</h2>
-		<p class="pt-2 text-xl">
+		<h2 class="text-left text-2xl sm:text-3xl">Zašto je sednica Senata važna?</h2>
+		<p class="pt-2 text-base sm:text-xl">
 			Na sednicama Senata univerziteta se glasa o izborima u zvanja, iznose se izveštaji o urađenim
 			doktoratima i druge tačke bitne za funkcionisanje univerziteta.
 		</p>
 	</div>
 	<div class="px-2 text-justify">
-		<h2 class="text-left text-3xl">Zašto se onda ne održi?</h2>
-		<p class="pt-2 text-xl">
+		<h2 class="text-left text-2xl sm:text-3xl">Zašto se onda ne održi?</h2>
+		<p class="pt-2 text-base sm:text-xl">
 			Na put održavanju ove sednice ne staju studenti, koji su kao jedine uslove postavili
 			verifikaciju ličnosti članova Senata pri ulazu, i prisustvo dva studentska posmatrača, koji,
 			naravno, ne bi imali pravo na reč. Rektor je izjavio da su ovi zahtevi „neprirodan pritisak na
@@ -101,7 +101,7 @@
 		</a>
 	</div>
 	<div class="px-2 text-justify">
-		<p class="pt-2 text-xl">
+		<p class="pt-2 text-base sm:text-xl">
 			Profesor Slobodan Gadžurić sazvao je uživo sednicu Stručnog veća za prirodno-matematičke
 			nauke, 7 dana pred zakazanu sednicu Senata, kako bi pokazao da su u zgradi Rektorata svi
 			bezbedni. Osvrnuo se i na činjenicu da je rektor Dejan Madić jedini koji nije podržao svoje
@@ -120,7 +120,7 @@
 		</a>
 	</div>
 	<div class="px-2 text-justify">
-		<p class="pt-2 text-xl">
+		<p class="pt-2 text-base sm:text-xl">
 			Podsetićemo da su profesori Univerziteta u Novom Sadu podržali i preuzeli zahteve studenata,
 			kao i da je njihov dodatni zahtev ostavka Dejana Madića sa mesta rektora. U sredu, 19.
 			februara, organizovali su „Potragu za rektorom“, čime su želeli da „ukažu na krizu
@@ -146,14 +146,16 @@
 		</a>
 	</div>
 	<div class="px-2 text-justify">
-		<p class="pt-2 text-xl">
+		<p class="pt-2 text-base sm:text-xl">
 			Madić je izjavio kako mu pomenuti protest liči na „atmosferu linča“, što je profesor Gadžurić
 			demantovao i potvrdio da je, prosto, reč o – potrazi i izrazio nadu da će se među tačkama
 			dnevnog reda 27. februara naći i ostavka rektora.
 		</p>
 	</div>
 	<div class="px-2 text-justify">
-		<h2 class="text-left text-xl font-bold">A naše pitanje je – Gde je rektor Dejan Madić?</h2>
+		<strong class="text-left text-lg font-bold sm:text-xl">
+			A naše pitanje je – Gde je rektor Dejan Madić?
+		</strong>
 	</div>
 	<div class="grid w-full">
 		<img src={P8} alt="Slika 8" class="col-start-1 row-start-1 w-full object-cover" />
