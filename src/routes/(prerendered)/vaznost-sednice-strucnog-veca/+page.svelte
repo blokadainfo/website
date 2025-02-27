@@ -10,7 +10,9 @@
 	import P8 from '$lib/assets/vaznost-sednice/8.jpeg';
 </script>
 
-<div class="mt-4 w-full max-w-screen-lg space-y-8 sm:mt-0 lg:mx-auto lg:max-w-screen-md">
+<div
+	class="mt-4 w-full max-w-screen-lg space-y-8 hyphens-auto sm:mt-0 lg:mx-auto lg:max-w-screen-md"
+>
 	<div class="grid w-full">
 		<img src={P0} alt="Slika 0" class="col-start-1 row-start-1 w-full object-cover" />
 		<div class="col-start-1 row-start-1 h-full bg-gradient-to-t from-black to-transparent"></div>
@@ -80,9 +82,9 @@
 		<h2 class="text-left text-3xl">Zašto se onda ne održi?</h2>
 		<p class="pt-2 text-xl">
 			Na put održavanju ove sednice ne staju studenti, koji su kao jedine uslove postavili
-			verifikaciju ličnosti članova Senata pri ulazu, i prisustvo dva studentska posmatrača, koji, naravno,
-			ne bi imali pravo na reč. Rektor je izjavio da su ovi zahtevi „neprirodan pritisak na članove
-			Senata“. <br />Nasuprot tome, Madić smatra da je potpuno prirodno tražiti od studenata
+			verifikaciju ličnosti članova Senata pri ulazu, i prisustvo dva studentska posmatrača, koji,
+			naravno, ne bi imali pravo na reč. Rektor je izjavio da su ovi zahtevi „neprirodan pritisak na
+			članove Senata“. <br />Nasuprot tome, Madić smatra da je potpuno prirodno tražiti od studenata
 			obustavu blokade najkasnije 7 dana pred održavanje sednice, kako bi „omogućili nesmetan
 			boravak u zgradi zaposlenima u Rektoratu, angažovanim službama čišćenja i obezbeđenja i
 			članovima Senata i pomoćnih organa Senata, a sve u cilju blagovremene administrativno-tehničke
