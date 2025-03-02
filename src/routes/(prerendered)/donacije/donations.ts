@@ -17,7 +17,7 @@ export const donations: {
 		links: ['https://pro.sony/en_BG/products/handheld-camcorders/pxw-z90']
 	},
 	{
-		name: 'Batt for SONY FV 100',
+		name: 'Baterije za SONY FV 100',
 		pieces: 3
 	},
 	{
@@ -32,7 +32,7 @@ export const donations: {
 	},
 	{
 		name: 'SENNHEISER MD46 Mic',
-		pieces: 1,
+		pieces: 2,
 		links: ['https://www.sennheiser.com/en-de/search-page?searchTerm=SENNHEISER%20MD46%20Mic']
 	},
 	{
@@ -62,7 +62,7 @@ export const donations: {
 	},
 	{
 		name: 'Elgato Cam Link',
-		pieces: 1,
+		pieces: 2,
 		links: ['https://ipon.hu/shop/termek/elgato-cam-link-4k/1712387']
 	},
 	{
@@ -77,7 +77,7 @@ export const donations: {
 	},
 	{
 		name: 'USB C RJ45 adapter Gigabitan 1000Mbps',
-		pieces: 3,
+		pieces: 2,
 		links: [
 			'https://gigatron.rs/mrezne-karte-i-adapteri/linkom-usbc-na-rj-45-linkom786-adapter-537215'
 		]
@@ -107,14 +107,14 @@ export const donations: {
 	},
 	{
 		name: 'UPS 600-1200W',
-		pieces: 2,
+		pieces: 1,
 		links: [
 			'https://gigatron.rs/ups-uredjaji/njoy-hours-plus-2000-1200w-ups-pwup-li200h1-az01b-174994'
 		]
 	},
 	{
 		name: 'UGREEN PB720 Powerbank 20000mAh 100W',
-		pieces: 2,
+		pieces: 1,
 		links: ['https://ipon.hu/shop/termek/ugreen-pb720-powerbank-20000mah-100w-fekete/2301480']
 	},
 	{
