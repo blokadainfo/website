@@ -44,7 +44,7 @@ export const donations: {
 	},
 	{
 		name: 'SanDisk 128GB 200MB/s',
-		pieces: 6
+		pieces: 3
 	},
 	{
 		name: 'Filter za kameru - KF Concept 82mm XV56 Nano-X Slim Variable NDX HD ND2-ND400',
@@ -61,11 +61,6 @@ export const donations: {
 		]
 	},
 	{
-		name: 'Elgato Cam Link',
-		pieces: 2,
-		links: ['https://ipon.hu/shop/termek/elgato-cam-link-4k/1712387']
-	},
-	{
 		name: 'Čitač za kartice - TRANSCEND TS-RDF8K2',
 		pieces: 1,
 		links: ['https://gigatron.rs/citaci-kartica/transcend-tsrdf8k2-218261']
@@ -77,7 +72,7 @@ export const donations: {
 	},
 	{
 		name: 'USB C RJ45 adapter Gigabitan 1000Mbps',
-		pieces: 2,
+		pieces: 1,
 		links: [
 			'https://gigatron.rs/mrezne-karte-i-adapteri/linkom-usbc-na-rj-45-linkom786-adapter-537215'
 		]
@@ -91,18 +86,10 @@ export const donations: {
 	},
 	{
 		name: 'TP-Link Archer AX23',
-		pieces: 5,
+		pieces: 3,
 		links: [
 			'https://ipon.hu/shop/termek/tp-link-archer-ax23-ax1800-dual-band-wi-fi-6-router/1941464',
 			'https://gigatron.rs/ruteri/tplink-ruter-archer-ax23-436770'
-		]
-	},
-	{
-		name: 'Eksterni SSD 2TB USB 3.1',
-		pieces: 1,
-		links: [
-			'https://www.bcgroup-online.com/eksterni-ssd/kingston-portable-xs1000-2tb-eksterni-ssd-sxs1000%5c2000g-179263',
-			'https://gigatron.rs/eksterni-hdd-i-ssd/samsung-portable-t5-evo-2tb-black-muph2t0s-eksterni-ssd-615451'
 		]
 	},
 	{
