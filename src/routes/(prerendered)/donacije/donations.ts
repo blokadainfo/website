@@ -71,13 +71,6 @@ export const donations: {
 		links: ['https://ipon.hu/shop/termek/baseus-metal-gleam-series-7-az-1-ben-hub-v2/2065078']
 	},
 	{
-		name: 'USB C RJ45 adapter Gigabitan 1000Mbps',
-		pieces: 1,
-		links: [
-			'https://gigatron.rs/mrezne-karte-i-adapteri/linkom-usbc-na-rj-45-linkom786-adapter-537215'
-		]
-	},
-	{
 		name: 'UBIQUITY airMAX LiteBeam 5AC',
 		pieces: 6,
 		links: [
@@ -96,13 +89,5 @@ export const donations: {
 		name: 'UGREEN PB720 Powerbank 20000mAh 100W',
 		pieces: 1,
 		links: ['https://ipon.hu/shop/termek/ugreen-pb720-powerbank-20000mah-100w-fekete/2301480']
-	},
-	{
-		name: 'Powerbank 20000-30000mAh 65W',
-		pieces: 1,
-		links: [
-			'https://ipon.hu/shop/termek/sandberg-survivor-powerbank-27000-pd65w/2318326',
-			'https://gigatron.rs/power-bank-eksterne-baterije/usams-30000mah-65w-power-bank-+-usb-typec-kabl-684579'
-		]
 	}
 ];
