@@ -93,13 +93,6 @@ export const donations: {
 		]
 	},
 	{
-		name: 'UPS 600-1200W',
-		pieces: 1,
-		links: [
-			'https://gigatron.rs/ups-uredjaji/njoy-hours-plus-2000-1200w-ups-pwup-li200h1-az01b-174994'
-		]
-	},
-	{
 		name: 'UGREEN PB720 Powerbank 20000mAh 100W',
 		pieces: 1,
 		links: ['https://ipon.hu/shop/termek/ugreen-pb720-powerbank-20000mah-100w-fekete/2301480']
