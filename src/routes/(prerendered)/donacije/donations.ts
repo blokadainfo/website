@@ -43,6 +43,11 @@ export const donations: {
 		]
 	},
 	{
+		name: 'SanDisk Extreme Pro 512GB',
+		pieces: 2,
+		links: ['https://josipovic.rs/proizvod/sandisk-extreme-pro-512gb-sdxc-200-140mb-s-uhs-i-class-10-v30']
+	},
+	{
 		name: 'SanDisk 128GB 200MB/s',
 		pieces: 3
 	},
