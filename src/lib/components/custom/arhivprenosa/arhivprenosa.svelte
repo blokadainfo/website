@@ -4,6 +4,20 @@
 
 <div class="mx-0.5 mb-2 mt-8 max-w-screen-lg space-y-8 sm:mx-auto sm:mt-28">
 	<Embeds
+		title="GDE SE MAJEŠ 1.3."
+		embeds={[
+			{
+				title: 'GDE SE MAJEŠ 1.3. - 1. DEO',
+				id: 'sV-TFma-q0o'
+			},
+			{
+				title: 'GDE SE MAJEŠ 1.3. - 2. DEO',
+				id: 'dHhYtqSZ1vg'
+			}
+		]}
+	/>
+	<hr class="h-3" />
+	<Embeds
 		title="15.2. SRETNIMO SE NA SRETENJE"
 		embeds={[
 			{
