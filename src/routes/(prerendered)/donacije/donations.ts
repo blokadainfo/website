@@ -4,6 +4,11 @@ export const donations: {
 	links?: string[];
 }[] = [
 	{
+		name: 'TP Link C54 AC1200 ruter',
+		pieces: 1,
+		links: ['https://gigatron.rs/ruteri/tplink-wi-fi-ruter-ac1200-c54-399069']
+	},
+	{
 		name: 'Gift kartice za gorivo'
 	},
 	{
