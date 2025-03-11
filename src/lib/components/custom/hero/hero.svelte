@@ -3,7 +3,7 @@
 	import Countdown from '$lib/components/custom/countdown/countdown.svelte';
 
 	const video = 'https://www.youtube.com/embed/TdvQe6Scigc';
-	const targetDate = new Date('2025-03-11T05:00:00Z'); // WARN: Use UTC time here
+	const targetDate = new Date('2025-03-11T14:00:00Z'); // WARN: Use UTC time here
 </script>
 
 <div class="relative left-0 top-0 grid h-lvh w-full place-items-center bg-black bg-cover bg-center">
