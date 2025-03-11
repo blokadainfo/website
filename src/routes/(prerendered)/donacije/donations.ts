@@ -4,23 +4,6 @@ export const donations: {
 	links?: string[];
 }[] = [
 	{
-		name: 'Milwaukee baterije M18 serije i punjači (18V 5Ah minimum, može 5.5Ah, 8Ah i 12Ah)',
-		pieces: 4,
-		links: [
-			'https://eltec.rs/proizvod/set-baterija-18v-i-punjaca-m18nrg-502',
-			'https://najpovoljnijialati.rs/proizvod/milvaukee-baterija-18v-12-0ah-redlitium-ion-m18-fb12-forge-4932492651',
-			'https://eltec.rs/proizvod/baterija-li-ion18v-12ah-high-output-m18hb12',
-			'https://najpovoljnijialati.rs/proizvod/milvaukee-baterija-18v-8-0ah-redlitium-ion-m18-fb8-forge-4932492131',
-			'https://eltec.rs/proizvod/baterija-li-ion-18v-8ah-high-output-m18hb8',
-			'https://eltec.rs/proizvod/baterija-li-ion-18v-5-5ah-high-output-m18hb5-5'
-		]
-	},
-	{
-		name: 'TP Link C54 AC1200 ruter',
-		pieces: 1,
-		links: ['https://gigatron.rs/ruteri/tplink-wi-fi-ruter-ac1200-c54-399069']
-	},
-	{
 		name: 'Gift kartice za gorivo'
 	},
 	{
@@ -61,7 +44,7 @@ export const donations: {
 	},
 	{
 		name: 'SanDisk Extreme Pro 512GB',
-		pieces: 2,
+		pieces: 1,
 		links: [
 			'https://josipovic.rs/proizvod/sandisk-extreme-pro-512gb-sdxc-200-140mb-s-uhs-i-class-10-v30'
 		]
@@ -91,27 +74,34 @@ export const donations: {
 	},
 	{
 		name: 'BASEUS Metal Gleam Series 7 hub v2 Gigabit RJ45',
-		pieces: 2,
+		pieces: 1,
 		links: ['https://ipon.hu/shop/termek/baseus-metal-gleam-series-7-az-1-ben-hub-v2/2065078']
 	},
 	{
 		name: 'UBIQUITY airMAX LiteBeam 5AC',
-		pieces: 6,
+		pieces: 4,
 		links: [
 			'https://gigatron.rs/access-point/ubiquity-airmax-litebeam-5ac-spoljasnja-cpe-antena-322944'
 		]
 	},
 	{
 		name: 'TP-Link Archer AX23',
-		pieces: 3,
+		pieces: 2,
 		links: [
 			'https://ipon.hu/shop/termek/tp-link-archer-ax23-ax1800-dual-band-wi-fi-6-router/1941464',
 			'https://gigatron.rs/ruteri/tplink-ruter-archer-ax23-436770'
 		]
 	},
 	{
-		name: 'UGREEN PB720 Powerbank 20000mAh 100W',
-		pieces: 1,
-		links: ['https://ipon.hu/shop/termek/ugreen-pb720-powerbank-20000mah-100w-fekete/2301480']
+		name: 'Milwaukee baterije M18 serije i punjači (18V 5Ah minimum, može 5.5Ah, 8Ah i 12Ah)',
+		pieces: 3,
+		links: [
+			'https://eltec.rs/proizvod/set-baterija-18v-i-punjaca-m18nrg-502',
+			'https://najpovoljnijialati.rs/proizvod/milvaukee-baterija-18v-12-0ah-redlitium-ion-m18-fb12-forge-4932492651',
+			'https://eltec.rs/proizvod/baterija-li-ion18v-12ah-high-output-m18hb12',
+			'https://najpovoljnijialati.rs/proizvod/milvaukee-baterija-18v-8-0ah-redlitium-ion-m18-fb8-forge-4932492131',
+			'https://eltec.rs/proizvod/baterija-li-ion-18v-8ah-high-output-m18hb8',
+			'https://eltec.rs/proizvod/baterija-li-ion-18v-5-5ah-high-output-m18hb5-5'
+		]
 	}
 ];
