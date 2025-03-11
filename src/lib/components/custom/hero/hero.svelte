@@ -2,8 +2,8 @@
 	import Backgrounds from './backgrounds.svelte';
 	import Countdown from '$lib/components/custom/countdown/countdown.svelte';
 
-	const video = 'https://www.youtube.com/embed/TdvQe6Scigc';
-	const targetDate = new Date('2025-03-11T14:00:00Z'); // WARN: Use UTC time here
+	const video = 'https://www.youtube.com/embed/U2Dh4N_n6X8';
+	const targetDate = new Date('2025-03-11T16:00:00Z'); // WARN: Use UTC time here
 </script>
 
 <div class="relative left-0 top-0 grid h-lvh w-full place-items-center bg-black bg-cover bg-center">
