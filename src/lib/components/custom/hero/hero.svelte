@@ -13,11 +13,8 @@
 	<div class="col-start-1 row-start-1 h-full w-full bg-black opacity-60"></div>
 	<div class="z-0 col-start-1 row-start-1 flex items-center justify-center text-center">
 		<div class="max-w-2xl">
-			<!-- <h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white sm:text-7xl">
-				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
-			</h1> -->
 			<h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white sm:text-7xl">
-				NEĆEMO IZBORE, HOĆEMO ZBOROVE
+				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
 			</h1>
 			<div class="flex w-full animate-fadeIn justify-center p-2">
 				<Countdown {video} {targetDate} />
