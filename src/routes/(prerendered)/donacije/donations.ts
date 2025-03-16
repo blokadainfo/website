@@ -7,6 +7,16 @@ export const donations: {
 	// 	name: 'Gift kartice za gorivo'
 	// },
 	{
+		name: 'USB 4G Modem ZTE MF833V',
+		pieces: 4,
+		links: [
+			'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/usb-modem-4g-zte-mf833v/oglas/132359330',
+			'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/zte-mf833v-4g-lte-usb-internet-modem-otkljucan/oglas/172329337',
+			'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/4g-lte-zte-mf833v-usb-sim-free-otkljucan-za-sve-mreze/oglas/170046812',
+			'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/4g-lte-zte-mf833v-usb-nov-sim-free-otkljucan-za-sve-mre/oglas/178492803'
+		]
+	},
+	{
 		name: 'Polovni Google Pixel telefon (dovoljan Pixel 4/4a ili noviji, može ekran biti polupan samo da radi)',
 		pieces: 4,
 		links: [
