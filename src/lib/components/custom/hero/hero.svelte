@@ -14,7 +14,7 @@
 	<div class="z-0 col-start-1 row-start-1 flex items-center justify-center text-center">
 		<div class="max-w-2xl">
 			<h1 class="mb-5 animate-fadeIn text-balance text-4xl font-bold text-white">
-				Pad nadstrešnice okončao je još jedan život, a odgovornih nema.
+				PAD NADSTREŠNICE OKONČAO JE JOŠ JEDAN ŽIVOT, A ODGOVORNIH NEMA
 			</h1>
 			<!-- <h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white">
 				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
