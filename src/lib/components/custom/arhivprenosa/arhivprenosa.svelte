@@ -4,6 +4,16 @@
 
 <div class="mx-0.5 mb-2 mt-8 max-w-screen-lg space-y-8 sm:mx-auto sm:mt-28">
 	<Embeds
+		title="15. za 15"
+		embeds={[
+			{
+				title: '15. za 15',
+				id: '_u_ZBq1AhmQ'
+			}
+		]}
+	/>
+	<hr class="h-3" />
+	<Embeds
 		title="GDE SE MAJEŠ 1.3."
 		embeds={[
 			{
