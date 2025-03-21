@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import Table from '$lib/components/custom/donations/table.svelte';
 	import { donations } from './donations';
 </script>
@@ -20,4 +20,4 @@
 		<a href="mailto:donacije@blokada.info" class="underline">donacije@blokada.info</a>
 	</p>
 	<Table {donations} />
-</div>
+</div> -->

@@ -13,12 +13,15 @@
 	<div class="col-start-1 row-start-1 h-full w-full bg-black opacity-60"></div>
 	<div class="z-0 col-start-1 row-start-1 flex items-center justify-center text-center">
 		<div class="max-w-2xl">
-			<h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white">
+			<h1 class="mb-5 animate-fadeIn text-balance text-4xl font-bold text-white">
+				Danas je pad nadstešnice okončao još jedan život, a odgovornih nema.
+			</h1>
+			<!-- <h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white">
 				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
 			</h1>
 			<div class="flex w-full animate-fadeIn justify-center p-2">
 				<Countdown {video} {targetDate} />
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
