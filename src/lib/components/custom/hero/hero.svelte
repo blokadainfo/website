@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Backgrounds from './backgrounds.svelte';
-	import Countdown from '$lib/components/custom/countdown/countdown.svelte';
+	// import Countdown from '$lib/components/custom/countdown/countdown.svelte';
 
 	const video = 'https://www.youtube.com/embed/_u_ZBq1AhmQ?si=VRspsD0BzqoDUCGl';
 	const targetDate = new Date('2025-03-15T12:40:00Z'); // WARN: Use UTC time here
@@ -14,7 +14,7 @@
 	<div class="z-0 col-start-1 row-start-1 flex items-center justify-center text-center">
 		<div class="max-w-2xl">
 			<h1 class="mb-5 animate-fadeIn text-balance text-4xl font-bold text-white">
-				Pad nadstrešnice okončao još jedan život, a odgovornih nema.
+				Pad nadstrešnice okončao je još jedan život, a odgovornih nema.
 			</h1>
 			<!-- <h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white">
 				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
