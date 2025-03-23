@@ -7,6 +7,13 @@ export const donations: {
 	// 	name: 'Gift kartice za gorivo'
 	// },
 	{
+		name: 'OpenWrt One',
+		pieces: 2,
+		links: [
+				'https://www.aliexpress.com/item/1005007795779282.html'
+			]
+	},
+	{
 		name: 'USB 4G Modem ZTE MF833V',
 		pieces: 4,
 		links: [
@@ -32,7 +39,7 @@ export const donations: {
 	},
 	{
 		name: 'UBIQUITY airMAX LiteBeam 5AC',
-		pieces: 4,
+		pieces: 3,
 		links: [
 			'https://gigatron.rs/access-point/ubiquity-airmax-litebeam-5ac-spoljasnja-cpe-antena-322944'
 		]
