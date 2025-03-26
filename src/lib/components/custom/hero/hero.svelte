@@ -3,7 +3,7 @@
 	import Countdown from '$lib/components/custom/countdown/countdown.svelte';
 
 	const video = 'https://www.youtube.com/embed/YlI8qgJAT7Y?si=0hPFQHf15zxTv5iR';
-	const targetDate = new Date('2025-03-24T17:15:00Z'); // WARN: Use UTC time here
+	const targetDate = new Date('2025-03-27T09:00:00Z'); // WARN: Use UTC time here
 </script>
 
 <div class="relative left-0 top-0 grid h-lvh w-full place-items-center bg-black bg-cover bg-center">
@@ -19,9 +19,9 @@
 			<h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white">
 				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
 			</h1>
-			<!-- <div class="flex w-full animate-fadeIn justify-center p-2">
+			<div class="flex w-full animate-fadeIn justify-center p-2">
 				<Countdown {video} {targetDate} />
-			</div> -->
+			</div>
 		</div>
 	</div>
 </div>
