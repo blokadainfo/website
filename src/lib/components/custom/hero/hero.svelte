@@ -2,7 +2,7 @@
 	import Backgrounds from './backgrounds.svelte';
 	import Countdown from '$lib/components/custom/countdown/countdown.svelte';
 
-	const video = 'https://www.youtube.com/embed/-LetmyLlSIg?si=gZdrrgLE9CFt7v0e';
+	const video = 'https://www.youtube.com/embed/YlI8qgJAT7Y?si=0hPFQHf15zxTv5iR';
 	const targetDate = new Date('2025-03-24T17:15:00Z'); // WARN: Use UTC time here
 </script>
 
