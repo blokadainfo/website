@@ -15,23 +15,11 @@ export const donations: {
 	},
 	{
 		name: 'USB 4G Modem ZTE MF833V',
-		pieces: 4,
-		links: [
-			'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/usb-modem-4g-zte-mf833v/oglas/132359330',
-			'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/zte-mf833v-4g-lte-usb-internet-modem-otkljucan/oglas/172329337',
-			'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/4g-lte-zte-mf833v-usb-sim-free-otkljucan-za-sve-mreze/oglas/170046812',
-			'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/4g-lte-zte-mf833v-usb-nov-sim-free-otkljucan-za-sve-mre/oglas/178492803'
-		]
+		pieces: 6
 	},
 	{
 		name: 'Polovni Google Pixel telefon (dovoljan Pixel 4/4a ili noviji, može ekran biti polupan samo da radi)',
-		pieces: 4,
-		links: [
-			'https://www.kupujemprodajem.com/mobilni-telefoni/google-pixel/google-pixel-5/oglas/178369072',
-			'https://www.kupujemprodajem.com/mobilni-telefoni/google-pixel/google-pixel-4-6-64gb-simfree-dual-sim-odlican-crypto-paypal/oglas/178425951',
-			'https://www.kupujemprodajem.com/mobilni-telefoni/google-pixel/pixel-4a-4g-blokiran-update-6-128gb/oglas/178045348',
-			'https://www.kupujemprodajem.com/mobilni-telefoni/google-pixel/google-pixel-6/oglas/178417867'
-		]
+		pieces: 3
 	},
 	{
 		name: 'Polovni Thinkpad T480 ispravan (sa 4G modemom poželjno)',
@@ -62,7 +50,7 @@ export const donations: {
 	},
 	{
 		name: 'BASEUS Metal Gleam Series 7 hub v2 Gigabit RJ45',
-		pieces: 2,
+		pieces: 1,
 		links: ['https://ipon.hu/shop/termek/baseus-metal-gleam-series-7-az-1-ben-hub-v2/2065078']
 	},
 	{
@@ -72,11 +60,6 @@ export const donations: {
 			'https://ipon.hu/shop/termek/tp-link-archer-ax23-ax1800-dual-band-wi-fi-6-router/1941464',
 			'https://gigatron.rs/ruteri/tplink-ruter-archer-ax23-436770'
 		]
-	},
-	{
-		name: 'TP-LINK 16-Port Easy Switch TL-SG116E',
-		pieces: 1,
-		links: ['https://gigatron.rs/switch-uredjaji/tplink-16-port-easy-switch-tl-sg116e-382604']
 	},
 	{
 		name: 'TP-LINK 5/8-Port Easy Switch TL-SG105E/SG108E',
