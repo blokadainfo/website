@@ -3,35 +3,7 @@ export const donations: {
 	pieces?: number;
 	links?: string[];
 }[] = [
-	// {
-	// 	name: 'Gift kartice za gorivo'
-	// },
-	{
-		name: 'OpenWrt One',
-		pieces: 2,
-		links: [
-				'https://www.aliexpress.com/item/1005007795779282.html'
-			]
-	},
-	{
-		name: 'USB 4G Modem ZTE MF833V',
-		pieces: 6
-	},
-	{
-		name: 'Polovni Google Pixel telefon (dovoljan Pixel 4/4a ili noviji, može ekran biti polupan samo da radi)',
-		pieces: 3
-	},
-	{
-		name: 'Polovni Thinkpad T480 ispravan (sa 4G modemom poželjno)',
-		pieces: 2
-	},
-	{
-		name: 'UBIQUITY airMAX LiteBeam 5AC',
-		pieces: 3,
-		links: [
-			'https://gigatron.rs/access-point/ubiquity-airmax-litebeam-5ac-spoljasnja-cpe-antena-322944'
-		]
-	},
+	// Snimatelji
 	{
 		name: 'SENNHEISER MD46 mikrofon',
 		pieces: 2,
@@ -46,27 +18,6 @@ export const donations: {
 		links: [
 			'https://www.audiopro.rs/proizvod/sennheiser-hd-25-slusalice?idPro=30251',
 			'https://www.player.rs/dj/dj-slusalice/sennheiser-hd-25'
-		]
-	},
-	{
-		name: 'BASEUS Metal Gleam Series 7 hub v2 Gigabit RJ45',
-		pieces: 1,
-		links: ['https://ipon.hu/shop/termek/baseus-metal-gleam-series-7-az-1-ben-hub-v2/2065078']
-	},
-	{
-		name: 'TP-Link Archer AX23',
-		pieces: 2,
-		links: [
-			'https://ipon.hu/shop/termek/tp-link-archer-ax23-ax1800-dual-band-wi-fi-6-router/1941464',
-			'https://gigatron.rs/ruteri/tplink-ruter-archer-ax23-436770'
-		]
-	},
-	{
-		name: 'TP-LINK 5/8-Port Easy Switch TL-SG105E/SG108E',
-		pieces: 2,
-		links: [
-			'https://gigatron.rs/switch-uredjaji/tplink-switch-tl-sg108e-58279',
-			'https://gigatron.rs/switch-uredjaji/tplink-5-port-gigabit-easy-smart-switch-tl-sg105e-93985'
 		]
 	},
 	{
@@ -112,6 +63,40 @@ export const donations: {
 		pieces: 1,
 		links: [
 			'https://www.sennheiser.com/en-de/catalog/products/wireless-systems/ew-dp-eng-set/ew-dp-eng-set-u15-700046'
+		]
+	},
+	// Tehnika
+	{
+		name: 'OpenWrt One',
+		pieces: 1,
+		links: ['https://www.aliexpress.com/item/1005007795779282.html']
+	},
+	{
+		name: 'UBIQUITY airMAX LiteBeam 5AC',
+		pieces: 3,
+		links: [
+			'https://gigatron.rs/access-point/ubiquity-airmax-litebeam-5ac-spoljasnja-cpe-antena-322944'
+		]
+	},
+	{
+		name: 'Lenovo Thinkcentre M910q Tiny (Quad Core, 8-16GB RAM)',
+		pieces: 1
+	},
+	{
+		name: 'USB 4G Modem ZTE MF823',
+		pieces: 3
+	},
+	{
+		name: 'BASEUS Metal Gleam Series 7 hub v2 Gigabit RJ45',
+		pieces: 1,
+		links: ['https://ipon.hu/shop/termek/baseus-metal-gleam-series-7-az-1-ben-hub-v2/2065078']
+	},
+	{
+		name: 'TP-Link Archer AX23',
+		pieces: 2,
+		links: [
+			'https://ipon.hu/shop/termek/tp-link-archer-ax23-ax1800-dual-band-wi-fi-6-router/1941464',
+			'https://gigatron.rs/ruteri/tplink-ruter-archer-ax23-436770'
 		]
 	}
 ];
