@@ -12,6 +12,7 @@
 			}
 		]}
 	/>
+	<hr class="h-3" />
 	<Embeds
 		title="PROTEST PROSVETARA U NOVOM SADU"
 		embeds={[
@@ -21,6 +22,7 @@
 			}
 		]}
 	/>
+	<hr class="h-3" />
 	<Embeds
 		title="PROTEST SREDNJOŠKOLACA U NOVOM SADU"
 		embeds={[
@@ -30,15 +32,17 @@
 			}
 		]}
 	/>
+	<hr class="h-3" />
 	<Embeds
 		title="KOMEMORACIJA ŽRTVAMA NATO AGRESIJE"
 		embeds={[
 			{
 				title: 'KOMEMORACIJA ŽRTVAMA NATO AGRESIJE',
-				id: '-LetmyLlSIg?si=c5r9NsblrTMrcspB'
+				id: '-LetmyLlSIg?si=6kaZLZC3T58hce5X'
 			}
 		]}
 	/>
+	<hr class="h-3" />
 	<Embeds
 		title="15. za 15"
 		embeds={[
