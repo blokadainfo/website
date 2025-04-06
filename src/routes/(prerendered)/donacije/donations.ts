@@ -67,9 +67,7 @@ export const donations: {
 	{
 		name: 'UBIQUITY airMAX LiteBeam 5AC',
 		pieces: 3,
-		links: [
-			'https://gigatron.rs/access-point/ubiquity-airmax-litebeam-5ac-spoljasnja-cpe-antena-322944'
-		]
+		links: ['https://gigatron.rs/proizvod/ubiquiti-litebeam-ac-lbe-5ac-810354026317']
 	},
 	{
 		name: 'Lenovo Thinkcentre M910q Tiny (Quad Core, 8GB RAM)',
