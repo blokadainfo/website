@@ -5,6 +5,15 @@ export const donations: {
 }[] = [
 	// Snimatelji
 	{
+		name: 'SONY PXW Z90 Camcorder',
+		pieces: 1,
+		links: ['https://pro.sony/en_BG/products/handheld-camcorders/pxw-z90']
+	},
+	{
+		name: 'Baterije za SONY FV 100',
+		pieces: 3
+	},
+	{
 		name: 'SENNHEISER MD46 mikrofon',
 		pieces: 2,
 		links: [
@@ -49,22 +58,6 @@ export const donations: {
 		pieces: 1,
 		links: ['https://www.kiloview.com/en/p3-mini']
 	},
-	{
-		name: 'SONY PXW Z90 Camcorder',
-		pieces: 1,
-		links: ['https://pro.sony/en_BG/products/handheld-camcorders/pxw-z90']
-	},
-	{
-		name: 'Baterije za SONY FV 100',
-		pieces: 3
-	},
-	{
-		name: 'SENNHEISER ENG set EW D ENG',
-		pieces: 1,
-		links: [
-			'https://www.sennheiser.com/en-de/catalog/products/wireless-systems/ew-dp-eng-set/ew-dp-eng-set-u15-700046'
-		]
-	},
 	// Tehnika
 	{
 		name: 'OpenWrt One',
@@ -79,24 +72,11 @@ export const donations: {
 		]
 	},
 	{
-		name: 'Lenovo Thinkcentre M910q Tiny (Quad Core, 8-16GB RAM)',
+		name: 'Lenovo Thinkcentre M910q Tiny (Quad Core, 8GB RAM)',
 		pieces: 1
 	},
 	{
-		name: 'USB 4G Modem ZTE MF823',
+		name: 'USB 4G Modem ZTE MF833V / ZTE MF823',
 		pieces: 3
-	},
-	{
-		name: 'BASEUS Metal Gleam Series 7 hub v2 Gigabit RJ45',
-		pieces: 1,
-		links: ['https://ipon.hu/shop/termek/baseus-metal-gleam-series-7-az-1-ben-hub-v2/2065078']
-	},
-	{
-		name: 'TP-Link Archer AX23',
-		pieces: 2,
-		links: [
-			'https://ipon.hu/shop/termek/tp-link-archer-ax23-ax1800-dual-band-wi-fi-6-router/1941464',
-			'https://gigatron.rs/ruteri/tplink-ruter-archer-ax23-436770'
-		]
 	}
 ];
