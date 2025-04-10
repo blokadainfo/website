@@ -40,13 +40,6 @@ export const donations: {
 		links: ['https://www.videoexpert.eu/en/search/?search=SACHTLER+SC+003+Bag']
 	},
 	{
-		name: 'SanDisk Extreme Pro 512GB',
-		pieces: 1,
-		links: [
-			'https://josipovic.rs/proizvod/sandisk-extreme-pro-512gb-sdxc-200-140mb-s-uhs-i-class-10-v30'
-		]
-	},
-	{
 		name: 'SanDisk Extreme 128GB',
 		pieces: 3,
 		links: [
@@ -72,9 +65,5 @@ export const donations: {
 	{
 		name: 'Lenovo Thinkcentre M910q Tiny (Quad Core, 8GB RAM)',
 		pieces: 1
-	},
-	{
-		name: 'USB 4G Modem ZTE MF833V / ZTE MF823',
-		pieces: 3
 	}
 ];
