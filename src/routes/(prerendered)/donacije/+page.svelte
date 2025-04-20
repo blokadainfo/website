@@ -10,10 +10,7 @@
 		su tačno oni modeli koji su nam potrebni dok više generična imena ukazuju na to da nam model
 		nije bitan. Takođe su priloženi i linkovi ka stranicama gde ih je moguće kupiti, doduše to je
 		samo smernica, ako je moguće nabaviti za manju cenu ili čak uzeti polovno to je svakako bolja
-		opcija. Artikle linkovane ka sajtu <a href="https://ipon.hu" class="italic underline">ipon.hu</a
-		>
-		je moguće poručiti preko
-		<a href="https://www.kupujemprodajem.com" class="underline">Kupujem Prodajem</a>.
+		opcija.
 	</p>
 	<p>
 		Pre poručivanja bilo čega obratite nam se na email adresu:
