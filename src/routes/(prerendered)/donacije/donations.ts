@@ -5,6 +5,10 @@ export const donations: {
 }[] = [
 	// Snimatelji
 	{
+		name: 'Baterije za Panasonic AG-VBR59',
+		pieces: 3
+	},
+	{
 		name: 'SONY PXW Z90 Camcorder',
 		pieces: 1,
 		links: ['https://pro.sony/en_BG/products/handheld-camcorders/pxw-z90']
@@ -45,11 +49,6 @@ export const donations: {
 		links: [
 			'https://gigatron.rs/memorijske-kartice/sandisk-extreme-128gb-microsdxd-memorijska-kartica-504795'
 		]
-	},
-	{
-		name: 'Kiloview P3 Mini',
-		pieces: 1,
-		links: ['https://www.kiloview.com/en/p3-mini']
 	},
 	// Tehnika
 	{
