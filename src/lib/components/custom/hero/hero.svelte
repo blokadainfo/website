@@ -16,9 +16,9 @@
 			<h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white">
 				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
 			</h1>
-			<div class="flex w-full animate-fadeIn justify-center p-2">
+			<!-- <div class="flex w-full animate-fadeIn justify-center p-2">
 				<Countdown {video} {targetDate} />
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
