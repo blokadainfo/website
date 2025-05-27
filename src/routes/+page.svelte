@@ -1,5 +1,9 @@
 <script lang="ts">
 	import Hero from '$lib/components/custom/hero/hero.svelte';
+	const { data } = $props();
+	console.log('latestUploaded', data.latestUploaded);
+	console.log('latestUpcoming', data.latestUpcoming);
+	console.log('live', data.live);
 </script>
 
 <Hero />

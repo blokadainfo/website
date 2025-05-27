@@ -40,5 +40,9 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"fast-xml-parser": "^5.2.3",
+		"googleapis": "^149.0.0"
 	}
 }
