@@ -3,10 +3,14 @@ export const donations: {
 	pieces?: number;
 	links?: string[];
 }[] = [
-	// Snimatelji
 	{
-		name: 'Baterije za Panasonic AG-VBR59',
-		pieces: 3
+		name: 'Orange Pi 5 Plus',
+		pieces: 2
+	},
+	{
+		name: 'OpenWrt One',
+		pieces: 1,
+		links: ['https://www.aliexpress.com/item/1005007795779282.html']
 	},
 	{
 		name: 'SONY PXW Z90 Camcorder',
@@ -19,7 +23,7 @@ export const donations: {
 	},
 	{
 		name: 'SENNHEISER MD46 mikrofon',
-		pieces: 2,
+		pieces: 1,
 		links: [
 			'https://www.musiccentar.com/proizvod/sennheiser-md-46-mikrofon',
 			'https://www.player.rs/ozvucenje/mikrofoni/mikrofoni-za-kamere/sennheiser-md-46'
@@ -50,19 +54,9 @@ export const donations: {
 			'https://gigatron.rs/memorijske-kartice/sandisk-extreme-128gb-microsdxd-memorijska-kartica-504795'
 		]
 	},
-	// Tehnika
-	{
-		name: 'OpenWrt One',
-		pieces: 1,
-		links: ['https://www.aliexpress.com/item/1005007795779282.html']
-	},
 	{
 		name: 'UBIQUITY airMAX LiteBeam 5AC',
-		pieces: 3,
+		pieces: 1,
 		links: ['https://gigatron.rs/proizvod/ubiquiti-litebeam-ac-lbe-5ac-810354026317']
-	},
-	{
-		name: 'Lenovo Thinkcentre M910q Tiny (Quad Core, 8GB RAM)',
-		pieces: 1
 	}
 ];
