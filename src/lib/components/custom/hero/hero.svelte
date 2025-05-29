@@ -1,26 +1,29 @@
 <script lang="ts">
 	import Backgrounds from './backgrounds.svelte';
-	import Countdown from '$lib/components/custom/countdown/countdown.svelte';
+	// import Countdown from '$lib/components/custom/countdown/countdown.svelte';
 
-	const video = 'https://www.youtube.com/embed/tACF1HxeAoc?si=mgMUk_a650xRsYrG';
-	const targetDate = new Date('2025-04-22T18:00:00Z'); // WARN: Use UTC time here
+	// const video = 'https://www.youtube.com/embed/4W2T0KwDM_A?si=Aumbh5P_VV8mBlzw';
+	// const targetDate = new Date('2025-04-16T13:30:00Z'); // WARN: Use UTC time here
 </script>
 
 <div class="relative left-0 top-0 grid h-lvh w-full place-items-center bg-black bg-cover bg-center">
-	<div class="col-start-1 row-start-1 h-full w-full animate-fadeIn">
+	<div class="animate-fadeIn col-start-1 row-start-1 h-full w-full">
 		<Backgrounds />
 	</div>
 	<div class="col-start-1 row-start-1 h-full w-full bg-black opacity-60"></div>
 	<div class="z-0 col-start-1 row-start-1 flex items-center justify-center text-center">
 		<div class="max-w-2xl">
-			<h1 class="mb-5 animate-fadeIn text-balance text-5xl font-bold text-white">
+			<h1 class="animate-fadeIn mb-5 text-balance text-5xl font-bold text-white">
 				BORBA NIJE GOTOVA DOK SE ZAHTEVI NE ISPUNE
 			</h1>
-			<!--
-			<div class="flex w-full animate-fadeIn justify-center p-2">
+			<a href="https://www.youtube.com/@blokada_info">
+				<p class="animate-fadeIn mb-5 text-balance text-3xl font-bold text-white hover:underline">
+					GLEDAJTE BLOKADA INFO PRENOS UŽIVO NA YOUTUBE
+				</p>
+			</a>
+			<!--<div class="flex w-full animate-fadeIn justify-center p-2">
 				<Countdown {video} {targetDate} />
-			</div>
-			-->
+			</div>-->
 		</div>
 	</div>
 </div>
