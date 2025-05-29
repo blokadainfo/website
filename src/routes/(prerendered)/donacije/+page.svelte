@@ -6,7 +6,7 @@
 <div class="mx-auto mb-8 flex w-full max-w-screen-sm flex-col space-y-8 p-2 sm:mt-28">
 	<h1 class="text-center text-3xl font-bold">Donacije za redakciju Blokada INFO</h1>
 	<p class="text-justify">
-		Donacije u kešu možete doneti na rektorat u Novom Sadu, kod redarskog stola, uz napomenu da su namenjene redakciji Blokada INFO.
+		Donacije u kešu možete doneti u centralnu zgradu univerziteta u Novom Sadu (rektorat), kod redarskog stola, uz napomenu da su namenjene redakciji Blokada INFO.
 		Adresa je Dr. Zorana Đinđića 1, Novi Sad 21000.
 	</p>
 	<p class="text-justify">
