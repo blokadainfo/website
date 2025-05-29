@@ -12,15 +12,15 @@
 		{
 			href: '/donacije',
 			text: 'DONACIJE'
-		},
-		{
-			href: '/arhiv-prenosa',
-			text: 'ARHIV PRENOSA'
-		},
-		{
-			href: '/vaznost-sednice-strucnog-veca',
-			text: 'VAŽNOST SEDNICE'
 		}
+		// {
+		// 	href: '/arhiv-prenosa',
+		// 	text: 'ARHIV PRENOSA'
+		// },
+		// {
+		// 	href: '/vaznost-sednice-strucnog-veca',
+		// 	text: 'VAŽNOST SEDNICE'
+		// }
 	];
 
 	let y = $state(0);
