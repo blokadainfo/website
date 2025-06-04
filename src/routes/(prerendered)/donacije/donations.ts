@@ -4,8 +4,9 @@ export const donations: {
 	links?: string[];
 }[] = [
 	{
-		name: 'Orange Pi 5 Plus',
-		pieces: 2
+		name: 'Radxa Rock 5B Plus',
+		pieces: 2,
+		links: ['https://shop.allnetchina.cn/products/rock5-model-b-1']
 	},
 	{
 		name: 'OpenWrt One',
