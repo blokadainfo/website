@@ -14,17 +14,12 @@ export const donations: {
 		links: ['https://www.aliexpress.com/item/1005007795779282.html']
 	},
 	{
-		name: 'SONY PXW Z90 Camcorder',
-		pieces: 1,
-		links: ['https://pro.sony/en_BG/products/handheld-camcorders/pxw-z90']
-	},
-	{
 		name: 'Baterije za SONY FV 100',
 		pieces: 3
 	},
 	{
 		name: 'SENNHEISER MD46 mikrofon',
-		pieces: 1,
+		pieces: 2,
 		links: [
 			'https://www.musiccentar.com/proizvod/sennheiser-md-46-mikrofon',
 			'https://www.player.rs/ozvucenje/mikrofoni/mikrofoni-za-kamere/sennheiser-md-46'
@@ -40,17 +35,12 @@ export const donations: {
 	},
 	{
 		name: 'SACHTLER ACE 1002 Tripod',
-		pieces: 1,
+		pieces: 2,
 		links: ['https://www.videoexpert.eu/en/up-to-4-kg/sachtler-ace-m-gs-tripod-system']
 	},
 	{
-		name: 'SACHTLER SC 003 torba za kameru',
-		pieces: 1,
-		links: ['https://www.videoexpert.eu/en/search/?search=SACHTLER+SC+003+Bag']
-	},
-	{
 		name: 'SanDisk Extreme 128GB',
-		pieces: 3,
+		pieces: 4,
 		links: [
 			'https://gigatron.rs/memorijske-kartice/sandisk-extreme-128gb-microsdxd-memorijska-kartica-504795'
 		]
