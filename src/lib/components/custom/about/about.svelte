@@ -2,9 +2,9 @@
 	<h1 class="my-4 text-center text-2xl font-bold sm:my-8 sm:text-3xl">Ko smo mi?</h1>
 	<div class="my-3 space-y-3 text-justify text-lg sm:mx-4 sm:my-5 sm:space-y-5">
 		<p>
-			Mi smo studenti u blokadi Univerziteta u Novom Sadu koji su se okupili i stvorili Blokada
-			INFO. Naš tim se u potpunosti sastoji od studenata - bilo da ih vidite na ekranu, da se nalaze
-			iza kamere ili sede u režiji. Blokada INFO je u potpunosti studentski projekat.
+			Blokada INFO je studentska redakcija nastala tokom studentskih blokada koje su započete nakon 
+			tragedije koja se desila u Novom Sadu 1. novembra 2024. godine. Naš tim se u potpunosti sastoji 
+			od studenata, bilo da ih vidite na ekranu, da se nalaze iza kamere ili sede u režiji.
 		</p>
 		<p>
 			Naš prvi projekat bio je 24-časovni prenos protesta u našem gradu „1.2. na 3 mosta!“ povodom
