@@ -4,9 +4,9 @@ export const donations: {
 	links?: string[];
 }[] = [
 	{
-		name: 'Radxa Rock 5B Plus',
-		pieces: 2,
-		links: ['https://shop.allnetchina.cn/products/rock5-model-b-1']
+		name: "TP Link TL-SG108E",
+		pieces: 1,
+		links: ['https://gigatron.rs/proizvod/tp-link-switch-tl-sg108e-6935364021856']
 	},
 	{
 		name: 'OpenWrt One',
@@ -37,17 +37,5 @@ export const donations: {
 		name: 'SACHTLER ACE 1002 Tripod',
 		pieces: 2,
 		links: ['https://www.videoexpert.eu/en/up-to-4-kg/sachtler-ace-m-gs-tripod-system']
-	},
-	{
-		name: 'SanDisk Extreme 128GB',
-		pieces: 4,
-		links: [
-			'https://gigatron.rs/memorijske-kartice/sandisk-extreme-128gb-microsdxd-memorijska-kartica-504795'
-		]
-	},
-	{
-		name: 'UBIQUITY airMAX LiteBeam 5AC',
-		pieces: 1,
-		links: ['https://gigatron.rs/proizvod/ubiquiti-litebeam-ac-lbe-5ac-810354026317']
 	}
 ];
