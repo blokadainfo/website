@@ -4,11 +4,6 @@ export const donations: {
 	links?: string[];
 }[] = [
 	{
-		name: "TP Link TL-SG108E",
-		pieces: 1,
-		links: ['https://gigatron.rs/proizvod/tp-link-switch-tl-sg108e-6935364021856']
-	},
-	{
 		name: 'OpenWrt One',
 		pieces: 1,
 		links: ['https://www.aliexpress.com/item/1005007795779282.html']
