@@ -1,16 +1,53 @@
 export const donations: {
 	name: string;
 	pieces?: number;
+	missing?: number;
 	links?: string[];
 }[] = [
 	{
-		name: 'OpenWrt One',
-		pieces: 1,
-		links: ['https://www.aliexpress.com/item/1005007795779282.html']
+		name: 'Baterije za SONY PMW 200',
+		pieces: 4,
+		links: [
+			'https://josipovic.rs/proizvod/sony-bp-u100-baterija',
+			'https://josipovic.rs/proizvod/sony-bp-u70-baterija'
+		]
 	},
 	{
-		name: 'Baterije za SONY FV 100',
-		pieces: 3
+		name: 'Radxa Rock 5B+ Plus',
+		pieces: 2,
+		missing: 2,
+		links: ['https://shop.allnetchina.cn/products/rock5-model-b-1?variant=49783253762364']
+	},
+	{
+		name: 'SmallRig RM75 svetlo',
+		pieces: 2,
+		missing: 1,
+		links: ['https://josipovic.rs/proizvod/smallrig-rm75-rgb-magnetic-smart-led-light']
+	},
+	{
+		name: 'TP-LINK T2U Nano USB WiFi',
+		pieces: 5,
+		missing: 5,
+		links: [
+			'https://gigatron.rs/proizvod/tp-link-archer-t2u-nano-ac600-wireless-usb-adapter-6935364099978',
+			'https://ipon.hu/shop/termek/tp-link-archer-t2u-nano-ac600-nano-wireless-usb-adapter/1733784'
+		]
+	},
+	{
+		name: 'BLACKMAGIC DESIGN Micro Converter SDI to HDMI 3G / BiDirectional SDI to HDMI 3G',
+		pieces: 1,
+		missing: 1
+	},
+	{
+		name: 'USAMS 65W 30000mAh Powerbank',
+		pieces: 3,
+		missing: 3,
+		links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746']
+	},
+	{
+		name: 'GL.iNet GL-MT3000 prenosivi ruter',
+		pieces: 1,
+		links: ['https://www.gl-inet.com/products/gl-mt3000']
 	},
 	{
 		name: 'SENNHEISER MD46 mikrofon',
@@ -22,15 +59,17 @@ export const donations: {
 	},
 	{
 		name: 'SENNHEISER HD25 slušalice',
-		pieces: 2,
+		pieces: 3,
 		links: [
 			'https://www.audiopro.rs/proizvod/sennheiser-hd-25-slusalice?idPro=30251',
 			'https://www.player.rs/dj/dj-slusalice/sennheiser-hd-25'
 		]
 	},
 	{
-		name: 'SACHTLER ACE 1002 Tripod',
+		name: 'Sachtler Ace M GS 1002 Tripod stativ',
 		pieces: 2,
-		links: ['https://www.videoexpert.eu/en/up-to-4-kg/sachtler-ace-m-gs-tripod-system']
+		links: [
+			'https://fotodiskont.rs/proizvodi/stativi-monopodi-glave/video-stativi/sachtler-ace-m-gs-1002.html'
+		]
 	}
 ];
