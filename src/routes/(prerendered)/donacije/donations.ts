@@ -25,7 +25,9 @@ export const donations: {
 		links: ['https://josipovic.rs/proizvod/smallrig-rm75-rgb-magnetic-smart-led-light']
 	},
 	{
-		name: 'USB 4G Modem (otključan za sve mreže) - Nov ili polovan (Huawei, ZTE, ...)'
+		name: 'USB 4G Modem (otključan za sve mreže) - Nov ili polovan (Huawei, ZTE, ...)',
+		pieces: 5,
+		missing: 4
 	},
 	{
 		name: 'TP-LINK T2U Nano USB WiFi',
