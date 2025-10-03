@@ -15,7 +15,7 @@ export const donations: {
 	{
 		name: 'Radxa Rock 5B+ Plus',
 		pieces: 2,
-		missing: 2,
+		missing: 1,
 		links: ['https://shop.allnetchina.cn/products/rock5-model-b-1?variant=49783253762364']
 	},
 	{
@@ -25,9 +25,12 @@ export const donations: {
 		links: ['https://josipovic.rs/proizvod/smallrig-rm75-rgb-magnetic-smart-led-light']
 	},
 	{
+		name: 'USB 4G Modem (otključan za sve mreže) - Nov ili polovan (Huawei, ZTE, ...)'
+	},
+	{
 		name: 'TP-LINK T2U Nano USB WiFi',
 		pieces: 5,
-		missing: 5,
+		missing: 3,
 		links: [
 			'https://gigatron.rs/proizvod/tp-link-archer-t2u-nano-ac600-wireless-usb-adapter-6935364099978',
 			'https://ipon.hu/shop/termek/tp-link-archer-t2u-nano-ac600-nano-wireless-usb-adapter/1733784'
@@ -40,7 +43,7 @@ export const donations: {
 	},
 	{
 		name: 'USAMS 65W 30000mAh Powerbank',
-		pieces: 3,
+		pieces: 5,
 		missing: 3,
 		links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746']
 	},
