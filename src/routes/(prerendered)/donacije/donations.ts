@@ -31,7 +31,7 @@ export const donations: {
 	},
 	{
 		name: 'TP-LINK T2U Nano USB WiFi',
-		pieces: 5,
+		pieces: 2,
 		missing: 3,
 		links: [
 			'https://gigatron.rs/proizvod/tp-link-archer-t2u-nano-ac600-wireless-usb-adapter-6935364099978',
@@ -45,7 +45,7 @@ export const donations: {
 	},
 	{
 		name: 'USAMS 65W 30000mAh Powerbank',
-		pieces: 5,
+		pieces: 4,
 		missing: 3,
 		links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746']
 	},
