@@ -1,0 +1,10 @@
+---
+import Layout from "@layouts/Layout.astro"
+import Navbar from "@components/custom/navbar/navbar.svelte"
+import Donations from "@components/custom/donations/donations.svelte"
+---
+
+<Layout>
+	<Navbar homepage={false} client:load />
+    <Donations />
+</Layout>

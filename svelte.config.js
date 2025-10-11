@@ -1,15 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { vitePreprocess } from '@astrojs/svelte';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-	compilerOptions: {
-		runes: true
-	},
+export default {
 	preprocess: vitePreprocess(),
-	kit: {
-		adapter: adapter()
-	}
-};
-
-export default config;
+}
