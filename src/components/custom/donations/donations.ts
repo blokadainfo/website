@@ -26,7 +26,11 @@ export const donations: {
 	{
 		name: 'BLACKMAGIC DESIGN Micro Converter SDI to HDMI 3G / BiDirectional SDI to HDMI 3G',
 		pieces: 1,
-		missing: 1
+		missing: 1,
+		links: [
+			'https://josipovic.rs/proizvod/micro-converter-bidirectional-sdi-hdmi-3g-without-psu',
+			'https://josipovic.rs/proizvod/micro-converter-sdi-to-hdmi-3g'
+		]
 	},
 	{
 		name: 'USAMS 65W 30000mAh Powerbank',
