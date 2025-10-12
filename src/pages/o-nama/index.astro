@@ -1,14 +1,14 @@
 ---
-import Layout from "@layouts/Layout.astro"
-import Navbar from "@components/custom/navbar/navbar.svelte"
-import About from "@components/custom/about/about.svelte"
-import Contact from "@components/custom/contact/contact.svelte"
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/custom/navbar/navbar.svelte';
+import About from '@components/custom/about/about.svelte';
+import Contact from '@components/custom/contact/contact.svelte';
 ---
 
 <Layout>
-	<Navbar homepage={false} client:load />
-	<div class="mx-auto flex w-full max-w-screen-sm flex-col p-2 sm:mt-28">
-        <About />
-        <Contact />
-    </div>
+  <Navbar homepage={false} client:load />
+  <div class="mx-auto flex w-full max-w-screen-sm flex-col p-2 sm:mt-28">
+    <About />
+    <Contact />
+  </div>
 </Layout>
