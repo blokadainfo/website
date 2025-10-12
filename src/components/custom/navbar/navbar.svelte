@@ -23,7 +23,7 @@
     // 	text: 'ARHIV PRENOSA'
     // },
     {
-      href: '/objave/vaznost-sednice-strucnog-veca',
+      href: '/vesti/2025-02-25-vaznost-sednice-strucnog-veca',
       text: 'VAŽNOST SEDNICE',
     },
   ];

@@ -12,7 +12,9 @@
     "lint:fix": "eslint . --ext .ts,.svelte,.astro --fix"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.7",
     "@astrojs/svelte": "^7.2.0",
+    "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.14",
     "astro": "^5.14.4",
     "svelte": "^5.39.11",
