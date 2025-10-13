@@ -24,9 +24,14 @@ const posts = Object.values(import.meta.glob('./*.mdx', { eager: true })) as Pos
                   class="col-start-1 row-start-1 w-full object-cover"
                 />
                 <div class="col-start-1 row-start-1 h-full bg-gradient-to-t from-black to-transparent" />
-                <h1 class="col-start-1 row-start-1 self-end p-3 text-left text-2xl font-bold text-balance text-white sm:text-4xl">
-                  {post.frontmatter.title}
-                </h1>
+                <div class="col-start-1 row-start-1 self-end p-3">
+                  <h1 class="text-left text-2xl font-bold text-balance text-white sm:text-4xl">
+                    {post.frontmatter.title}
+                  </h1>
+                  <span class="sm:text-md text-left text-xs font-light text-gray-200">
+                    Autor {post.frontmatter.author} | {post.frontmatter.date}
+                  </span>
+                </div>
               </div>
             </a>
           </li>
