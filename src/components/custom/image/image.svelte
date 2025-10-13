@@ -12,12 +12,12 @@
   } = $props();
 </script>
 
-<div class="grid w-full px-0 sm:px-10 xl:px-20">
+<div class="not-prose my-5 grid w-full px-0 sm:px-10 xl:px-20">
   <img {src} {alt} class="col-start-1 row-start-1 w-full object-cover" />
   {#if typeof href === 'string' && href !== ''}
     <a
       href={href.startsWith('http') ? href : `https://${href}`}
-      class="col-start-1 row-start-1 self-end bg-gradient-to-t from-black to-transparent pb-1 pr-1 pt-20 text-right text-white no-underline"
+      class="col-start-1 row-start-1 self-end bg-gradient-to-t from-black to-transparent pb-1 pr-1 pt-20 text-right text-white"
     >
       {label}
     </a>
