@@ -26,10 +26,10 @@
   ><defs id="defs14" />
   <style type="text/css" id="style1">
     .st9b {
-      fill: var(--primary);
+      fill: var(--secondary);
     }
     .st10b {
-      fill: var(--secondary);
+      fill: var(--primary);
     }
   </style>
   {#if !mini}
