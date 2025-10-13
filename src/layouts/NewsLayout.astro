@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props;
 
 <Layout title={frontmatter.title}>
   <Navbar homepage={false} client:load />
-  <article class="mx-auto my-8 max-w-4xl px-6">
+  <article class="mx-auto my-8 max-w-4xl px-6 tracking-tight hyphens-auto">
     <header class="mb-8 text-center">
       <div class="grid w-full">
         <img
@@ -16,11 +16,11 @@ const { frontmatter } = Astro.props;
         />
         <div class="col-start-1 row-start-1 h-full bg-gradient-to-t from-black to-transparent">
         </div>
-        <h1
+        <!-- <h1
           class="col-start-1 row-start-1 self-end p-3 text-left text-2xl font-bold text-balance text-white sm:text-4xl"
         >
           {frontmatter.title}
-        </h1>
+        </h1> -->
       </div>
       <div class="text-md text-gray-500">
         <span>{frontmatter.date}</span> • <span>{frontmatter.author}</span>
