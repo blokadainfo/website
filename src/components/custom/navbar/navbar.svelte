@@ -19,8 +19,8 @@
       text: 'DONACIJE',
     },
     {
-      href: '/objave',
-      text: 'OBJAVE',
+      href: '/pisali-smo',
+      text: 'PISALI SMO',
     },
     // {
     // 	href: '/arhiv-prenosa',

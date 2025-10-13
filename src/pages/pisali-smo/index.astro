@@ -2,7 +2,7 @@
 import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/custom/navbar/navbar.svelte';
 
-import { type PostMDX } from './types.ts';
+import { type PostMDX } from './types.js';
 const posts = Object.values(import.meta.glob('./*.mdx', { eager: true })) as PostMDX[];
 ---
 
@@ -10,7 +10,7 @@ const posts = Object.values(import.meta.glob('./*.mdx', { eager: true })) as Pos
   <Navbar homepage={false} client:load />
   <div class="mx-auto flex w-full max-w-screen-sm flex-col p-2 sm:mt-28">
     <h1 class="my-4 text-center text-2xl font-bold sm:my-8 sm:text-3xl">
-      Sve objave redakcije Blokada INFO
+      Svi tekstovi redakcije Blokada INFO
     </h1>
     <ul class="my-3 space-y-3 text-justify text-lg sm:mx-4 sm:my-5 sm:space-y-5">
       {
