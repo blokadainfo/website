@@ -18,14 +18,14 @@
       href: '/donacije',
       text: 'DONACIJE',
     },
+    {
+      href: '/objave',
+      text: 'OBJAVE',
+    },
     // {
     // 	href: '/arhiv-prenosa',
     // 	text: 'ARHIV PRENOSA'
     // },
-    {
-      href: '/vesti/2025-02-25-vaznost-sednice-strucnog-veca',
-      text: 'VAŽNOST SEDNICE',
-    },
   ];
 
   let y = $state(0);

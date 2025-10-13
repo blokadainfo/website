@@ -9,7 +9,6 @@
       "@functions/*": ["./src/functions/*"],
       "@layouts/*": ["./src/layouts/*"],
       "@pages/*": ["./src/pages/*"],
-      "@posts/*": ["./src/posts/*"],
       "@styles/*": ["./src/styles/*"]
     }
   }
