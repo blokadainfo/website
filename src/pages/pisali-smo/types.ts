@@ -5,6 +5,7 @@ export type PostMDX = {
     title: string;
     date: string;
     author: string;
+    gender: 'F' | 'M';
     image: string;
   };
 };

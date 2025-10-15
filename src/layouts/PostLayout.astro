@@ -31,6 +31,9 @@ const { frontmatter } = Astro.props;
     </section>
   </article>
   <footer class="my-8 text-center">
-    <p class="text-sm text-gray-500">Autor {frontmatter.author} | {frontmatter.date}</p>
+    <p class="text-sm text-gray-500">
+      {frontmatter.gender === 'F' ? 'Autorka' : 'Autor'}
+      {frontmatter.author} | {frontmatter.date}
+    </p>
   </footer>
 </Layout>

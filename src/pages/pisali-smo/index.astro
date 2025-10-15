@@ -29,7 +29,8 @@ const posts = Object.values(import.meta.glob('./*.mdx', { eager: true })) as Pos
                     {post.frontmatter.title}
                   </h1>
                   <span class="sm:text-md text-left text-xs font-light text-gray-200">
-                    Autor {post.frontmatter.author} | {post.frontmatter.date}
+                    {post.frontmatter.gender === 'F' ? 'Autorka' : 'Autor'}{' '}
+                    {post.frontmatter.author} | {post.frontmatter.date}
                   </span>
                 </div>
               </div>
