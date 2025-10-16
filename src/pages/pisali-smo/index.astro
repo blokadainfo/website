@@ -3,6 +3,7 @@ import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/custom/navbar/navbar.svelte';
 
 import { type PostMDX } from './types.js';
+import { dateToSRB } from '@functions/datetosrb';
 const posts = Object.values(import.meta.glob('./*.mdx', { eager: true })) as PostMDX[];
 ---
 
@@ -30,7 +31,7 @@ const posts = Object.values(import.meta.glob('./*.mdx', { eager: true })) as Pos
                   </h1>
                   <span class="sm:text-md text-left text-xs font-light text-gray-200">
                     {post.frontmatter.gender === 'F' ? 'Autorka' : 'Autor'}{' '}
-                    {post.frontmatter.author} | {post.frontmatter.date}
+                    {post.frontmatter.author} | Napisano {dateToSRB(post.frontmatter.date)}
                   </span>
                 </div>
               </div>
