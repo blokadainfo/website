@@ -26,6 +26,11 @@ export const donations: {
     links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746'],
   },
   {
+    name: '[HITNO] SmallRig RM75 osvetljenje za kameru',
+    pieces: 2,
+    links: ['https://josipovic.rs/proizvod/smallrig-rm75-rgb-magnetic-smart-led-light'],
+  },
+  {
     name: 'Radxa Rock 5B+ Plus',
     pieces: 2,
     links: ['https://shop.allnetchina.cn/products/rock5-model-b-1?variant=49783253762364'],
