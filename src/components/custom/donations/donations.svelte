@@ -10,10 +10,9 @@
     Lista ažurirana {dateToSRB()}
   </span>
   <p class="text-justify">
-    Novčane donacije su moguće putem online portala <a
-      href="https://podrzistudente.org"
-      class="underline">podrzistudente.org</a
-    >, uz napomenu da su namenjene redakciji Blokada INFO.
+    Novčane donacije su moguće uživo na Prirodno-matematičkom fakultetu u Novom Sadu i online putem
+    portala <a href="https://podrzistudente.org" class="underline">podrzistudente.org</a>, uz
+    obaveznu napomenu da su namenjene redakciji Blokada INFO.
   </p>
   <p class="text-justify">
     Na ovoj stranici se nalaze sve potrepštine našeg tima. Svi artikli koji imaju specificiran naziv
