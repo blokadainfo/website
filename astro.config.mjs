@@ -14,4 +14,10 @@ export default defineConfig({
   },
 
   integrations: [svelte(), mdx()],
+
+  markdown: {
+    remarkRehype: {
+      footnoteLabel: 'Fusnote',
+    },
+  },
 });
