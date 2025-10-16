@@ -1,15 +1,13 @@
 <script lang="ts">
   import Table from './table.svelte';
   import { donations } from './donations';
-  import { dateToISO8601 } from '@functions/iso8601';
-
-  const latestUpdate = dateToISO8601();
+  import { dateToSRB } from '@functions/datetosrb';
 </script>
 
 <div class="mx-auto mb-8 flex w-full max-w-screen-sm flex-col space-y-8 p-2 sm:mt-28">
   <h1 class="text-center text-3xl font-bold">Donacije za redakciju Blokada INFO</h1>
   <span class="text-right text-sm font-light">
-    Lista ažurirana na datum (godina-mesec-dan): {latestUpdate}
+    Lista ažurirana {dateToSRB()}
   </span>
   <p class="text-justify">
     Novčane donacije su moguće putem online portala <a

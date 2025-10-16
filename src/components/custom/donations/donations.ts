@@ -1,11 +1,10 @@
 export const donations: {
   name: string;
   pieces?: number;
-  missing?: number;
   links?: string[];
 }[] = [
   {
-    name: 'Baterije za SONY PMW 200',
+    name: '[HITNO] Baterije za SONY PMW 200',
     pieces: 4,
     links: [
       'https://josipovic.rs/proizvod/sony-bp-u100-baterija',
@@ -13,30 +12,31 @@ export const donations: {
     ],
   },
   {
-    name: 'Radxa Rock 5B+ Plus',
-    pieces: 2,
-    missing: 1,
-    links: ['https://shop.allnetchina.cn/products/rock5-model-b-1?variant=49783253762364'],
+    name: '[HITNO] USB 4G Modem (otključan za sve mreže) - Nov ili polovan (ZTE MF833V, ZTE MF823, Huawei E3372, ...)',
+    pieces: 5,
+    links: [
+      'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/zte-mf833v-4g-lte-usb-internet-modem-otkljucan/oglas/184902574?filterId=8007468586',
+      'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/usb-modem-4g-zte-mf833v/oglas/132359330?filterId=8007468586',
+      'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/huawei-4g-usb-modem-e3372h-320/oglas/185924787?filterId=7961756113',
+    ],
   },
   {
-    name: 'USB 4G Modem (otključan za sve mreže) - Nov ili polovan (Huawei, ZTE, ...)',
-    pieces: 5,
-    missing: 4,
+    name: '[HITNO] USAMS 65W 30000mAh Powerbank',
+    pieces: 2,
+    links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746'],
+  },
+  {
+    name: 'Radxa Rock 5B+ Plus',
+    pieces: 2,
+    links: ['https://shop.allnetchina.cn/products/rock5-model-b-1?variant=49783253762364'],
   },
   {
     name: 'BLACKMAGIC DESIGN Micro Converter SDI to HDMI 3G / BiDirectional SDI to HDMI 3G',
     pieces: 1,
-    missing: 1,
     links: [
       'https://josipovic.rs/proizvod/micro-converter-bidirectional-sdi-hdmi-3g-without-psu',
       'https://josipovic.rs/proizvod/micro-converter-sdi-to-hdmi-3g',
     ],
-  },
-  {
-    name: 'USAMS 65W 30000mAh Powerbank',
-    pieces: 2,
-    missing: 3,
-    links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746'],
   },
   {
     name: 'SENNHEISER MD46 mikrofon',

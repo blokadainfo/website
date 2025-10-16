@@ -16,7 +16,6 @@
     <tr class="bg-gray-100">
       <th class="border border-gray-300 py-2 sm:px-4">Naziv</th>
       <th class="border border-gray-300 py-2 sm:px-4">Kol.</th>
-      <th class="border border-gray-300 py-2 sm:px-4">Oduzeto</th>
       <th class="border border-gray-300 py-2 sm:px-4">Gde kupiti</th>
     </tr>
   </thead>
@@ -25,8 +24,6 @@
       <tr class="border-b border-gray-300">
         <td class="border border-gray-300 py-2 sm:px-4">{donation.name}</td>
         <td class="border border-gray-300 py-2 text-center sm:px-4">{donation.pieces ?? '♾️'}</td>
-        <td class="border border-gray-300 py-2 text-center sm:px-4">{donation.missing ?? 'Nije'}</td
-        >
         <td class="border border-gray-300 py-2 sm:px-4">
           {#if donation.links && donation.links.length > 0}
             <ul class="space-y-2">
