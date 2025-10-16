@@ -13,7 +13,7 @@ export const donations: {
   },
   {
     name: '[HITNO] USB 4G Modem (otključan za sve mreže) - Nov ili polovan (ZTE MF833V, ZTE MF823, Huawei E3372, ...)',
-    pieces: 9,
+    pieces: 7,
     links: [
       'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/zte-mf833v-4g-lte-usb-internet-modem-otkljucan/oglas/184902574?filterId=8007468586',
       'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/usb-modem-4g-zte-mf833v/oglas/132359330?filterId=8007468586',
