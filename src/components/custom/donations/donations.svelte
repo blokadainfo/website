@@ -21,6 +21,9 @@
     smernica. U slučaju da je moguće nabaviti predmet za manju cenu ili ga kupiti kao polovan, to je
     svakako bolja opcija.
   </p>
+  <p class="text-justify font-bold">
+    Svi artikli sa oznakom "HITNO" su nam potrebni za prenos 1.11.
+  </p>
   <p class="text-justify">
     Pre poručivanja bilo čega obratite nam se na email adresu:
     <a href="mailto:donacije@blokada.info" class="underline">donacije@blokada.info</a>
