@@ -12,6 +12,10 @@ export const donations: {
     ],
   },
   {
+    name: '[HITNO] Yettel i A1 prepaid internet SIM kartice (minimum sa 10GB interneta)',
+    pieces: 8,
+  },
+  {
     name: '[HITNO] USB 4G Modem (otključan za sve mreže) - Nov ili polovan (ZTE MF833V, ZTE MF823, Huawei E3372, ...)',
     pieces: 7,
     links: [
@@ -26,9 +30,13 @@ export const donations: {
     links: ['https://josipovic.rs/proizvod/smallrig-rm75-rgb-magnetic-smart-led-light'],
   },
   {
-    name: 'USAMS 65W 30000mAh Powerbank',
+    name: '[HITNO] USAMS 65W 30000mAh Powerbank',
     pieces: 2,
     links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746'],
+  },
+  {
+    name: '[HITNO] USB A na C i C na C kablovi',
+    pieces: 15,
   },
   {
     name: 'Radxa Rock 5B+ Plus',
