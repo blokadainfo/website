@@ -1,0 +1,40 @@
+---
+layout: ../../layouts/PostLayout.astro
+title: 'Otpor i zajedništvo: Intervju s Ognjenom Markovićem, učesnikom flotile Sumud'
+author: 'Danica Pantović'
+gender: 'F'
+date: '2025-10-18'
+image: /images/2025-10-18-otpor-i-zajednistvo-intervju-sa-ognjenom-markovicem/0.jpeg
+---
+
+import Image from '@components/custom/image/image.svelte';
+
+# {frontmatter.title}
+
+Pažnja sveta u septembru ove godine bila je usmerena ka Globalnoj flotili Sumud, humanitarnoj civilnoj pomorskoj misiji ka Gazi. Preko 40 brodova, s više stotina aktivista iz raznih krajeva sveta, plovilo je Mediteranom s ciljem da probiju potpunu blokadu Pojasa Gaze i dostave palestinskom narodu osnovne namirnice i lekove.
+
+Na jednom od brodova se nalazio i sprski državljanin **Ognjen Marković**. Razgovarali smo s njim o motivima da se priključi misiji, toku putovanja, kao i događađjima koji su usledili nakon što je bio kidnapovan od strane izraelske vojske.
+
+**Na pitanje o procesu prijave i njegovoj motivaciji da se priključi floti, Ognjen navodi da se sve desilo prilično nenadano:**
+
+> Bio sam upućen u palestinsko pitanje i pre nego što je počeo genocid. Kao još jedna od žrtava imperijalizma, osećam solidarnost sa njihovom borbom. Pratio sam pomno šta se dešava u Gazi, tako mi i prethodni pokušaj da se probije opsada primorskog prilaza nije promakao. Ideja direktnog, fizičkog suprotstavljanja okupaciji mi se svidela, kao i internacionalni karakter organizacije.
+
+Iskočila mi je sponzorisana objava GSF-a u kojoj traže volontere, prijavio sam se na mejling listu, posle dve nedelje su tražili da popunim upitnik sa pitanjima koja variraju od iskustva na vodi, do ličnih stavova vazanih za događaje u Gazi. Već sam se pomirio sa tim da me neće zvati, otišao sam na putovanje, kada sam dobio poziv za Zoom razgovor, gde su nas uputili u detalje misije i saopštili gde i kada treba da dođemo. Tako da sam se nenadano pridružio floti.*
+
+Ognjen opisuje celo iskustvo kao veoma **značajno, ali i problematično**. Najveći utisak mu je, kako kaže, ostavilo jedinstvo koje je bilo kao nepisani uslov učešća.
+
+Flota je presretnuta od strane izraelske vojske, nedaleko od voda Gaze, u noći između 1. i 2. oktobra, nakon čega su članovi posada bili odvedeni u izraelski zatvor, potom deportovani. **Ognjen nam je prepričao i šta se dešavalo od momenta kada flota gubi kontakt sa javnošću**:
+
+> Sa megafona su nam se obratili, obavestili nas da će da preuzmu komandu nad našim brodom, da su naoružani i spremni da pucaju u slučaju bilo kakvog otpora. Naredili su nam da dignemo ruke uvis i ukrcali se na brod. Prošlo je koliko-toliko očekivano. Iznenadilo me je koliko su mladi vojnici. Ne verujem da su imali više od 18-19 godina. Upečatljiva je bila njihova reakcija kada su pronašli donacije. Kutije sa zrnastom hranom, bebi formule i nekoliko filtera za vodu. Delovali su zbunjeno i pričali su nešto međusobno, mislim da su očekivali da pronađu nešto drugo…
+
+Kako Ognjen tvrdi, nakon toga ih je vojska predala policiji. Potpisao je 72. formular kojim pristaje na dovrovolju deportaciju u roku od 72h, nakon čega sledi transport ka zatvoru Ketziot.
+
+> Tamo smo bili **izloženi deprivaciji sna**. Sve vreme smo bili u ćelijama, nas 13 u ćeliji sa 8 kreveta. Fizičko nasilje su vršili selektivno i zajedničko svakoj žrtvi koja mi je poznata je da se javno protive okupaciji Palestine i genocidu u Gazi u okviru svog profesionalnog angažovanja. **Niko nije dobio medicinsku pomoć**, čak ni čovek od 75 godina koji je dijabetičar, a čiji je nivo šećera u krvi u jednom trenutku bio 15. **Meni lično su uskratili viđanje sa advokatom, nisu dozvolili ambasadi da pošalje nekog da me vidi** i dok me nisu pustili nisam imao ideju šta se dešava napolju.
+
+Nakon 6 dana u zatvoru, Ognjen je deportovan za Srbiju preko Jordana i Dohe. U Jordanu ga je sačekao ambasador:
+
+> Rekao mi je da je svakodnevno pokušavao da stupi u kontakt sa mnom i da se čuo sa advokatima iz Adale. Takođe je upućivao moju porodicu o svim novostima koje je imao, ali cionisti ga prosto nisu pustili, još su *lagali da nisam potpisao formu za dobrovoljnu deportaciju*.
+
+**Izjavu predsednika Srbije** u kojoj učesnike ove akcije naziva neodgovornim spasiocima sveta, Ognjen komentariše na sledeći način:
+
+> Mislim da je svako odabrao svoju stranu, zvaničnici imperijalnih sila i saradnici globalnog zapada su ostali pri saučesništvu u genocidu, verni imperijalnoj politici iz proteklog veka. **Masovna rekognicija Palestinske države je farsa i pranje ruku**. Rezolucija Osla 1993. godine nije pravda za narod Palestine, već segregaciona politika i održavanje imperijalističkog interesa na Bliskom istoku. Iskrenu podršku primarno palestinskom otporu, tek sekundarno floti, su iskazali zvaničnici naroda koji su svoju slobodu platili skupo i svakodnevno moraju da je brane od istog tog imperijalnog Zapada. **Voleo bih da se Srbija našla među njima, ali na kraju krajeva zato smo i na ulici poslednjih 10 meseci**.
