@@ -6,9 +6,7 @@
 
 <div class="mx-auto mb-8 flex w-full max-w-screen-sm flex-col space-y-8 p-2 sm:mt-28">
   <h1 class="text-center text-3xl font-bold">Donacije za redakciju Blokada INFO</h1>
-  <span class="text-right text-sm font-light">
-    Lista ažurirana {dateToSRB()}
-  </span>
+  <hr />
   <h2 class="text-center text-2xl">Novčane donacije</h2>
   <p class="text-justify leading-tight">
     Novčane donacije možete doneti <b>uživo na Prirodno-matematički fakultet</b> u Novom Sadu ili na
@@ -27,6 +25,7 @@
     >.
     <b>Obavezno naglasite</b> u komentaru da je uplata <b>namenjena redakciji Blokada INFO</b>.
   </p>
+  <hr />
   <h2 class="text-center text-2xl">Potrebna oprema za rad</h2>
   <p class="text-center text-lg font-bold text-red-400">
     Sve stavke sa oznakom "HITNO" su nam potrebne za prenos 31.10.2025. i 1.11.2025.
@@ -40,5 +39,9 @@
     Pre poručivanja bilo čega obratite nam se na email adresu:
     <a href="mailto:donacije@blokada.info" class="text-teal-500 underline">donacije@blokada.info</a>
   </p>
+  <hr />
+  <span class="text-right font-light">
+    Lista je ažurirana {dateToSRB()}
+  </span>
   <Table {donations} />
 </div>
