@@ -14,16 +14,16 @@ export const donations: {
     links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746'],
   },
   {
-    name: '[HITNO] USB A na C i C na C kablovi',
+    name: '[HITNO] USB A na C kablovi (običan USB na C)',
     pieces: 15,
   },
   {
-    name: '[HITNO] Yettel i A1 prepaid internet SIM kartice (minimum sa 10GB interneta)',
+    name: '[HITNO] Yettel i MTS prepaid internet SIM kartice (minimum sa 10GB interneta)',
     pieces: 8,
   },
   {
     name: '[HITNO] USB 4G Modem (otključan za sve mreže) - Nov ili polovan (ZTE MF833V, ZTE MF823, ZTE MF831, Huawei E3372, ...)',
-    pieces: 7,
+    pieces: 2,
   },
   {
     name: 'Radxa Rock 5B+ Plus (dovoljna je 4GB varijanta ali ako nema na stanju može i sa više memorije)',
