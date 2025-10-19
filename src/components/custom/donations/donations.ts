@@ -4,27 +4,6 @@ export const donations: {
   links?: string[];
 }[] = [
   {
-    name: '[HITNO] Baterije za SONY PMW 200',
-    pieces: 4,
-    links: [
-      'https://josipovic.rs/proizvod/sony-bp-u100-baterija',
-      'https://josipovic.rs/proizvod/sony-bp-u70-baterija',
-    ],
-  },
-  {
-    name: '[HITNO] Yettel i A1 prepaid internet SIM kartice (minimum sa 10GB interneta)',
-    pieces: 8,
-  },
-  {
-    name: '[HITNO] USB 4G Modem (otključan za sve mreže) - Nov ili polovan (ZTE MF833V, ZTE MF823, Huawei E3372, ...)',
-    pieces: 7,
-    links: [
-      'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/zte-mf833v-4g-lte-usb-internet-modem-otkljucan/oglas/184902574?filterId=8007468586',
-      'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/usb-modem-4g-zte-mf833v/oglas/132359330?filterId=8007468586',
-      'https://www.kupujemprodajem.com/kompjuteri-desktop/modemi-i-ruteri/huawei-4g-usb-modem-e3372h-320/oglas/185924787?filterId=7961756113',
-    ],
-  },
-  {
     name: '[HITNO] SmallRig RM75 osvetljenje za kameru',
     pieces: 2,
     links: ['https://josipovic.rs/proizvod/smallrig-rm75-rgb-magnetic-smart-led-light'],
@@ -39,17 +18,17 @@ export const donations: {
     pieces: 15,
   },
   {
-    name: 'Radxa Rock 5B+ Plus',
-    pieces: 2,
-    links: ['https://shop.allnetchina.cn/products/rock5-model-b-1?variant=49783253762364'],
+    name: '[HITNO] Yettel i A1 prepaid internet SIM kartice (minimum sa 10GB interneta)',
+    pieces: 8,
   },
   {
-    name: 'BLACKMAGIC DESIGN Micro Converter SDI to HDMI 3G / BiDirectional SDI to HDMI 3G',
-    pieces: 1,
-    links: [
-      'https://josipovic.rs/proizvod/micro-converter-bidirectional-sdi-hdmi-3g-without-psu',
-      'https://josipovic.rs/proizvod/micro-converter-sdi-to-hdmi-3g',
-    ],
+    name: '[HITNO] USB 4G Modem (otključan za sve mreže) - Nov ili polovan (ZTE MF833V, ZTE MF823, ZTE MF831, Huawei E3372, ...)',
+    pieces: 7,
+  },
+  {
+    name: 'Radxa Rock 5B+ Plus (dovoljna je 4GB varijanta ali ako nema na stanju može i sa više memorije)',
+    pieces: 2,
+    links: ['https://shop.allnetchina.cn/products/rock5-model-b-1?variant=49783253827900'],
   },
   {
     name: 'SENNHEISER MD46 mikrofon',
