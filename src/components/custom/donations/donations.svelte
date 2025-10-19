@@ -39,7 +39,6 @@
     Pre poručivanja bilo čega obratite nam se na email adresu:
     <a href="mailto:donacije@blokada.info" class="text-teal-500 underline">donacije@blokada.info</a>
   </p>
-  <hr />
   <span class="text-right font-light">
     Lista je ažurirana {dateToSRB()}
   </span>
