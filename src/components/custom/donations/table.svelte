@@ -21,7 +21,8 @@
   </thead>
   <tbody>
     {#each donations as donation (donation.name)}
-      <tr class="border-b border-gray-300">
+      {@const urgent = donation.name.toLowerCase().includes('hitno')}
+      <tr class="border-b border-gray-300" class:bg-red-200={urgent}>
         <td class="border border-gray-300 py-2 sm:px-4">{donation.name}</td>
         <td class="border border-gray-300 py-2 text-center sm:px-4">{donation.pieces ?? '♾️'}</td>
         <td class="border border-gray-300 py-2 sm:px-4">
