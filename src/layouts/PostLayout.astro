@@ -2,6 +2,7 @@
 import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/custom/navbar/navbar.svelte';
 import { dateToSRB } from '@functions/datetosrb';
+import { genderedAuthor } from '@functions/genderedauthor';
 const { frontmatter } = Astro.props;
 ---
 
@@ -33,7 +34,7 @@ const { frontmatter } = Astro.props;
   </article>
   <footer class="my-8 text-center">
     <p class="text-sm text-gray-500">
-      {frontmatter.gender === 'F' ? 'Autorka' : 'Autor'}
+      {genderedAuthor(frontmatter.gender)}
       {frontmatter.author} | Napisano {dateToSRB(frontmatter.date)}
     </p>
   </footer>
