@@ -30,7 +30,7 @@ export const donations: {
   },
   {
     name: 'SENNHEISER MD46 mikrofon',
-    pieces: 2,
+    pieces: 1,
     links: [
       'https://www.musiccentar.com/proizvod/sennheiser-md-46-mikrofon',
       'https://www.player.rs/ozvucenje/mikrofoni/mikrofoni-za-kamere/sennheiser-md-46',
