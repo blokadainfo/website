@@ -7,5 +7,7 @@ export type PostMDX = {
     author: string;
     gender: 'F' | 'M';
     image: string;
+    imglabel: string;
+    imgsource: string;
   };
 };

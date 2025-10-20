@@ -18,11 +18,13 @@ const { frontmatter } = Astro.props;
         />
         <div class="col-start-1 row-start-1 h-full bg-gradient-to-t from-black to-transparent">
         </div>
-        <!-- <h1
-          class="col-start-1 row-start-1 self-end p-3 text-left text-2xl font-bold text-balance text-white sm:text-4xl"
-        >
-          {frontmatter.title}
-        </h1> -->
+        <div class="col-start-1 row-start-1 self-end p-3 text-right">
+          <a href={frontmatter.imgsource}>
+            <span class="text-md font-light text-gray-200 sm:text-xl">
+              {frontmatter.imglabel}
+            </span>
+          </a>
+        </div>
       </div>
       <div class="text-md text-gray-500">
         <span>{frontmatter.date}</span> • <span>{frontmatter.author}</span>
