@@ -4,16 +4,6 @@ export const donations: {
   links?: string[];
 }[] = [
   {
-    name: '[HITNO] SmallRig RM75 osvetljenje za kameru',
-    pieces: 2,
-    links: ['https://josipovic.rs/proizvod/smallrig-rm75-rgb-magnetic-smart-led-light'],
-  },
-  {
-    name: '[HITNO] USAMS 65W 30000mAh Powerbank',
-    pieces: 2,
-    links: ['https://gigatron.rs/proizvod/usamspb30000mah65wcmxtypec100w-6958444973746'],
-  },
-  {
     name: '[HITNO] USB A na C (običan USB na C) i C na C kablovi',
     pieces: 15,
     links: [
