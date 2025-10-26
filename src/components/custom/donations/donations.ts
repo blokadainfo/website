@@ -4,24 +4,14 @@ export const donations: {
   links?: string[];
 }[] = [
   {
-    name: '[HITNO] USB A na C (običan USB na C) i C na C kablovi',
-    pieces: 15,
-    links: [
-      'https://gigatron.rs/proizvod/hama-usb-kabl-tip-c-0-75m-crni-135735-4047443322906',
-      'https://gigatron.rs/proizvod/hama-usb-c-1-5m-kabl-4047443443854',
-    ],
+    name: '[HITNO] USB A na C (običan USB na C)',
+    pieces: 4,
+    links: ['https://gigatron.rs/proizvod/hama-usb-kabl-tip-c-0-75m-crni-135735-4047443322906'],
   },
   {
-    name: '[HITNO] Yettel i MTS prepaid internet SIM kartice (minimum 10GB interneta)',
+    name: '[HITNO] Yettel prepaid internet SIM kartice (minimum 40GB interneta)',
     pieces: 8,
-    links: [
-      'https://www.yettel.rs/sr/privatni/ponuda/mobilni-internet/prepaid',
-      'https://mts.rs/Privatni/Internet/Mobilni-internet/Pripejd-mobilni-internet',
-    ],
-  },
-  {
-    name: '[HITNO] USB 4G Modem (otključan za sve mreže) - Nov ili polovan (ZTE MF833V, ZTE MF823, ZTE MF831, Huawei E3372, ...)',
-    pieces: 2,
+    links: ['https://www.yettel.rs/sr/privatni/ponuda/mobilni-internet/prepaid'],
   },
   {
     name: 'Radxa Rock 5B+ Plus (dovoljna je 4GB varijanta ali ako nema na stanju može i sa više memorije)',
