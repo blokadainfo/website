@@ -3,42 +3,56 @@
 
   const imageModules: Record<string, { default: string }> = import.meta.glob(
     '@assets/backgrounds/**/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
-    {
-      eager: true,
-      query: {
-        enhanced: true,
-      },
-    }
+    { eager: true, query: { enhanced: true } }
   );
-  const imageSourcesShuffled = Object.values(imageModules)
-    .map((m) => m.default)
-    .map((value) => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
+  const images = Object.values(imageModules).map((m) => m.default);
 
-  let currentBackgroundIndex = $state(0);
-  function changeBackground(): void {
-    if (currentBackgroundIndex + 1 < imageSourcesShuffled.length) {
-      currentBackgroundIndex++;
-    } else {
-      currentBackgroundIndex = 0;
+  let active = $state(0);
+  let order = $state(images.map((_, i) => i));
+  let initial = $state(true);
+
+  function shuffle<T>(arr: T[]) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
     }
+    return a;
+  }
+
+  function rotateToStart<T>(arr: T[], start: T) {
+    const idx = arr.indexOf(start);
+    return idx <= 0 ? arr : [...arr.slice(idx), ...arr.slice(0, idx)];
+  }
+
+  function next() {
+    const step = (order.indexOf(active) + 1) % order.length;
+    active = order[step];
   }
 
   onMount(() => {
-    const interval = setInterval(changeBackground, 3000);
-    return () => clearInterval(interval);
+    order = rotateToStart(shuffle(order), 0);
+
+    queueMicrotask(() => {
+      initial = false;
+    });
+
+    const id = setInterval(next, 3000);
+    return () => clearInterval(id);
   });
 </script>
 
-<div class="size-full">
-  {#each imageSourcesShuffled as src, idx (src)}
+<div class="relative size-full">
+  {#each images as src, i (src)}
     <img
       {src}
-      alt={`Background ${idx}`}
+      alt=""
+      aria-hidden="true"
       class="absolute inset-0 size-full object-cover brightness-50 grayscale transition-opacity duration-1000"
-      class:opacity-0={idx !== currentBackgroundIndex}
+      class:opacity-0={i !== active || (initial && i === 0)}
       loading="eager"
+      decoding="async"
+      fetchpriority={i === 0 ? 'high' : 'low'}
     />
   {/each}
 </div>
