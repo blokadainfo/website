@@ -3,6 +3,20 @@ import '@styles/global.css';
 const { title } = Astro.props;
 ---
 
+<script>
+  window.onload = function () {
+    console.log(
+      '%c░█▀▄░█░░░█▀█░█░█░█▀█░█▀▄░█▀█\n░█▀▄░█░░░█░█░█▀▄░█▀█░█░█░█▀█\n░▀▀░░▀▀▀░▀▀▀░▀░▀░▀░▀░▀▀░░▀░▀',
+      'color: #db2340; font: 400 1em monospace;'
+    );
+
+    console.log(
+      '%c░▀█▀░█▀█░█▀▀░█▀█            \n░░█░░█░█░█▀▀░█░█            \n░▀▀▀░▀░▀░▀░░░▀▀▀',
+      'color: #50c2be; font: 400 1.75em monospace;'
+    );
+  };
+</script>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
