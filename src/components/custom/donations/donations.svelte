@@ -20,7 +20,7 @@
   </p>
   <p class="hyphens-auto leading-tight sm:text-justify">
     <b>Iz inostranstva</b> možete donirati online putem portala
-    <a href="https://podrzistudente.org" class="font-bold text-teal-500 underline"
+    <a href="https://givebutter.com/G2On6l/blokadainfo" class="font-bold text-teal-500 underline"
       >podrzistudente.org</a
     >.
     <b>Obavezno naglasite</b> u komentaru da je uplata <b>namenjena redakciji Blokada INFO</b>.
