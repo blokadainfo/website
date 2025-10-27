@@ -4,16 +4,6 @@ export const donations: {
   links?: string[];
 }[] = [
   {
-    name: '[HITNO] USB A na C (običan USB na C)',
-    pieces: 4,
-    links: ['https://gigatron.rs/proizvod/hama-usb-kabl-tip-c-0-75m-crni-135735-4047443322906'],
-  },
-  {
-    name: '[HITNO] Yettel prepaid internet SIM kartice (minimum 40GB interneta)',
-    pieces: 8,
-    links: ['https://www.yettel.rs/sr/privatni/ponuda/mobilni-internet/prepaid'],
-  },
-  {
     name: 'Radxa Rock 5B+ Plus (dovoljna je 4GB varijanta ali ako nema na stanju može i sa više memorije)',
     pieces: 2,
     links: ['https://shop.allnetchina.cn/products/rock5-model-b-1?variant=49783253827900'],
