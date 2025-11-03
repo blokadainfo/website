@@ -8,18 +8,18 @@
   <h1 class="text-center text-3xl font-bold">Donacije za redakciju Blokada INFO</h1>
   <hr />
   <h2 class="text-center text-2xl">Novčane donacije</h2>
-  <p class="hyphens-auto leading-tight sm:text-justify">
+  <!-- <p class="hyphens-auto leading-tight sm:text-justify">
     Novčane donacije možete doneti <b>uživo na Prirodno-matematički fakultet</b> u Novom Sadu ili na
     Vaš
     <b>lokalni zbor</b>.
-  </p>
-  <p class="hyphens-auto leading-tight sm:text-justify">
+  </p> -->
+  <!-- <p class="hyphens-auto leading-tight sm:text-justify">
     Takođe je moguća <b>uplata na račun</b> ako nam se <b>obratite na email</b> adresu
     <a href="mailto:donacije@blokada.info" class="text-teal-500 underline">donacije@blokada.info</a
     >.
-  </p>
+  </p> -->
   <p class="hyphens-auto leading-tight sm:text-justify">
-    <b>Iz inostranstva</b> možete donirati online putem portala
+    Možete donirati online putem portala
     <a href="https://givebutter.com/G2On6l/blokadainfo" class="font-bold text-teal-500 underline"
       >podrzistudente.org</a
     >.
