@@ -20,7 +20,7 @@
   </p> -->
   <p class="hyphens-auto leading-tight sm:text-justify">
     Možete donirati online putem portala
-    <a href="https://givebutter.com/G2On6l/blokadainfo" class="font-bold text-teal-500 underline"
+    <a href="https://givebutter.com/G2On6l/blokadainfo" class="font-bold text-[#50c2be] underline"
       >podrzistudente.org</a
     >.
     <b>Obavezno naglasite</b> u komentaru da je uplata <b>namenjena redakciji Blokada INFO</b>.
@@ -34,7 +34,8 @@
   </p>
   <p class="text-center text-lg font-bold">
     Pre poručivanja bilo čega obratite nam se na email adresu:
-    <a href="mailto:donacije@blokada.info" class="text-teal-500 underline">donacije@blokada.info</a>
+    <a href="mailto:donacije@blokada.info" class="text-[#db2340] underline">donacije@blokada.info</a
+    >
   </p>
   <span class="text-center font-light sm:text-right">
     Lista je ažurirana {dateToSRB()}
