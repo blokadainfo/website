@@ -2,9 +2,11 @@
 import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/custom/navbar/navbar.svelte';
 import Hero from '@components/custom/hero/hero.svelte';
+import SurveyHolder from '@components/custom/survey-holder/survey-holder.astro';
 ---
 
 <Layout>
+  <SurveyHolder />
   <Navbar homepage={true} client:load />
   <Hero client:load />
 </Layout>
