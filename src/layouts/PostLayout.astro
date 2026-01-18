@@ -28,9 +28,15 @@ const readingTimeLabel = formatReadingTime(frontmatter.readingTimeSeconds);
           </a>
         </div>
       </div>
-      <div class="text-md text-gray-500">
-        <span>{frontmatter.date}</span> | <span>{frontmatter.author}</span> |{' '}
-        <span>{readingTimeLabel}</span>
+      <div
+        class="text-md flex flex-col items-center gap-y-1 text-gray-500 md:flex-row md:justify-between"
+      >
+        <span class="text-center whitespace-nowrap md:text-left">{frontmatter.author}</span>
+        <div class="flex flex-wrap items-center justify-center gap-x-1 md:justify-end">
+          <span class="whitespace-nowrap">{frontmatter.date}</span>
+          <span class="whitespace-nowrap">|</span>
+          <span class="whitespace-nowrap">{readingTimeLabel}</span>
+        </div>
       </div>
     </header>
     <section class="prose md:prose-lg prose-p:text-justify max-w-none">
@@ -38,9 +44,13 @@ const readingTimeLabel = formatReadingTime(frontmatter.readingTimeSeconds);
     </section>
   </article>
   <footer class="my-8 text-center">
-    <p class="text-sm text-gray-500">
-      {genderedAuthor(frontmatter.gender)}
-      {frontmatter.author} | Napisano {dateToSRB(frontmatter.date)}
+    <p class="flex flex-wrap justify-center gap-x-1 gap-y-1 p-5 text-sm text-gray-500">
+      <span>
+        {genderedAuthor(frontmatter.gender)}
+        {frontmatter.author}
+      </span>
+      <span class="hidden sm:inline">|</span>
+      <span>Napisano {dateToSRB(frontmatter.date)}</span>
     </p>
   </footer>
 </Layout>
