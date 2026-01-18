@@ -5,6 +5,7 @@ import Navbar from '@components/custom/navbar/navbar.svelte';
 import { type PostMDX } from './types.js';
 import { dateToSRB } from '@functions/datetosrb';
 import { genderedAuthor } from '@functions/genderedauthor';
+import { formatReadingTime } from '@functions/remark-reading-time';
 const posts = Object.values(import.meta.glob('./*.mdx', { eager: true })) as PostMDX[];
 ---
 
@@ -32,7 +33,8 @@ const posts = Object.values(import.meta.glob('./*.mdx', { eager: true })) as Pos
                   </h1>
                   <span class="sm:text-md text-xs font-light text-gray-200">
                     {genderedAuthor(post.frontmatter.gender)} {post.frontmatter.author} | Napisano{' '}
-                    {dateToSRB(post.frontmatter.date)}
+                    {dateToSRB(post.frontmatter.date)} |{' '}
+                    {formatReadingTime(post.frontmatter.readingTimeSeconds)}
                   </span>
                 </div>
               </div>

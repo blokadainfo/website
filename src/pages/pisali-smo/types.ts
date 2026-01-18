@@ -9,5 +9,6 @@ export type PostMDX = {
     image: string;
     imglabel: string;
     imgsource: string;
+    readingTimeSeconds?: number;
   };
 };

@@ -3,7 +3,9 @@ import Layout from '@layouts/Layout.astro';
 import Navbar from '@components/custom/navbar/navbar.svelte';
 import { dateToSRB } from '@functions/datetosrb';
 import { genderedAuthor } from '@functions/genderedauthor';
+import { formatReadingTime } from '@functions/remark-reading-time';
 const { frontmatter } = Astro.props;
+const readingTimeLabel = formatReadingTime(frontmatter.readingTimeSeconds);
 ---
 
 <Layout title={frontmatter.title}>
@@ -27,7 +29,8 @@ const { frontmatter } = Astro.props;
         </div>
       </div>
       <div class="text-md text-gray-500">
-        <span>{frontmatter.date}</span> • <span>{frontmatter.author}</span>
+        <span>{frontmatter.date}</span> | <span>{frontmatter.author}</span> |{' '}
+        <span>{readingTimeLabel}</span>
       </div>
     </header>
     <section class="prose md:prose-lg prose-p:text-justify max-w-none">
