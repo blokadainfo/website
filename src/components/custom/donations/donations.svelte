@@ -18,7 +18,7 @@
     <a href="mailto:donacije@blokada.info" class="text-teal-500 underline">donacije@blokada.info</a
     >.
   </p> -->
-  <p class="hyphens-auto leading-tight sm:text-justify">
+  <p class="leading-tight hyphens-auto sm:text-justify">
     Možete donirati online putem portala
     <a href="https://givebutter.com/G2On6l/blokadainfo" class="font-bold text-[#50c2be] underline"
       >podrzistudente.org</a
